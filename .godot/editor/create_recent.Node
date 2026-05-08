@@ -1,0 +1,12 @@
+SpringArm3D
+Node3D
+MeshInstance3D
+CollisionShape3D
+StaticBody3D
+Camera3D
+VehicleWheel3D
+VehicleBody3D
+Area3D
+DirectionalLight3D
+DirectionalLight2D
+SpotLight3D
