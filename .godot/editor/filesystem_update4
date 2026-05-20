@@ -1,3 +1,2 @@
-res://prueba_auto_AVANZADO_1.tscn
-res://el_mundo_test.tscn
-res://scripts/suspension.gd
+res://control.gd
+res://scenes/el_mundo_test.tscn

@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://dtrkj3s1jbrk0"]
+
+[ext_resource type="Script" uid="uid://brtcksw07mvef" path="res://control.gd" id="1_r67kn"]
+[ext_resource type="Texture2D" uid="uid://6wh0okin8vua" path="res://imagenes/auto 2.webp" id="2_brbbq"]
+[ext_resource type="Texture2D" uid="uid://bwd3t6b11ix3y" path="res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png" id="3_brbbq"]
+
+[node name="Control" type="Control" unique_id=15099002]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r67kn")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=887343839]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 3.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1048859, 0.07386873, 0.12786102, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect" unique_id=1037433058]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 2.0
+offset_right = -1.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_brbbq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=1357359677]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -205.75
+offset_top = -128.0
+offset_right = 205.75
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 22
+
+[node name="jugar" type="Button" parent="ColorRect/VBoxContainer" unique_id=998093092]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "jugar"
+
+[node name="opciones" type="Button" parent="ColorRect/VBoxContainer" unique_id=657997210]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "opciones"
+
+[node name="salir" type="Button" parent="ColorRect/VBoxContainer" unique_id=1819570885]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "salir"
+
+[node name="opciones_screen" type="TextureRect" parent="." unique_id=1225603518]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.22600001
+anchor_bottom = 0.22600001
+offset_left = 1.0
+offset_top = -150.44801
+offset_right = 1154.0
+offset_bottom = 506.552
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_brbbq")
+expand_mode = 1
+
+[connection signal="pressed" from="ColorRect/VBoxContainer/jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/salir" to="." method="_on_salir_pressed"]
