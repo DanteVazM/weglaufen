@@ -551,3 +551,9 @@ script = ExtResource("2_fjst5")
 
 [node name="Camera3D" type="Camera3D" parent="CamArm" unique_id=677753202]
 transform = Transform3D(-1, 0, 8.7422784e-08, 1.5442193e-08, 0.9842759, 0.1766381, -8.604813e-08, 0.1766381, -0.9842759, -0.0065079927, 1.9821006, -4.1003056)
+
+[node name="espirometro" type="Label" parent="CamArm/Camera3D" unique_id=2094812865]
+offset_right = 596.0
+offset_bottom = 174.0
+text = "
+0"

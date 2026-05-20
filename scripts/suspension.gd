@@ -4,6 +4,7 @@ var max_rpm = 450 # ????
 var max_torque = 300 #"Velocidad"
 var turn_speed = 3 #Determina que tan rapido giran las ruedas
 var turn_amount = 0.9 #Determina "el angulo" de giro de las reudas
+@onready var text_velocity = $CamArm/Camera3D/espirometro
 
 func _physics_process(delta: float) -> void:
 	$CamArm.position = position
@@ -18,8 +19,10 @@ func _physics_process(delta: float) -> void:
 	#Da "potencia" al auto, en el sentido de que esto hace que avanze
 	var torque = dirrection * max_torque * (1.0 - RPM / max_rpm) #La multiplicacion al final hace que mientras mas gires, mas baja el torque
 	engine_force = torque
-	
+	text_velocity.text = str(int(torque))
+		
 	steering = lerp(steering, steering_direction * turn_amount, turn_speed * delta)
 	
 	if dirrection == 0:
 		brake=2
+		
