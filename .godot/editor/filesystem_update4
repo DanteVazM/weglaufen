@@ -1,1 +1,4 @@
 res://scenes/el_mundo_test.tscn
+res://control.gd
+res://scenes/scripts.gd
+res://scripts/suspension.gd

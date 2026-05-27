@@ -1,18 +1,18 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779884640
-control.gd::GDScript::3618994475376513377::1779281730::0::1::::<>Control<><>0<>0<><>::
-GUIA.md::TextFile::-1::1779282889::0::1::::<><><>0<>0<><>::
-icon.svg::CompressedTexture2D::1980151826230133846::1776430611::1776430618::1::::<><><>0<>0<>cecaca39f4779def21d8a05ad0c74534<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://::1779886429
+control.gd::GDScript::3618994475376513377::1779886429::0::1::::<>Control<><>0<>0<><>::
+GUIA.md::TextFile::-1::1779886429::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::1980151826230133846::1776430611::1779886429::1::::<><><>0<>0<>cecaca39f4779def21d8a05ad0c74534<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 prueba_auto1.tscn::PackedScene::5260518509311060895::1778245980::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
 prueba_auto2.tscn::PackedScene::4745107150932541570::1778245980::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
 prueba_auto3.tscn::PackedScene::497008739406361102::1778245980::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
 prueba_auto4.tscn::PackedScene::7409943762860330318::1778245980::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
-prueba_auto_AVANZADO_1.tscn::PackedScene::8146736580175350441::1779284153::0::1::::<><><>0<>0<><>::uid://dbfj2336jcpk::::res://scripts/suspension.gd<>uid://b45yar8adh2xl::::res://scripts/camera_springarm_avanzado1.gd
+prueba_auto_AVANZADO_1.tscn::PackedScene::8146736580175350441::1779886429::0::1::::<><><>0<>0<><>::uid://dbfj2336jcpk::::res://scripts/suspension.gd<>uid://b45yar8adh2xl::::res://scripts/camera_springarm_avanzado1.gd
 road-curve-intersection-barrier.glb::PackedScene::5470066388398599921::1778245980::1778245980::1::::<><><>0<>0<>77f85338db9422aa19ff5a9270640e24<>res://.godot/imported/road-curve-intersection-barrier.glb-3ab61860af3856c851044ee84560bfbd.scn::
-::res://imagenes/::1779884778
-auto 2.webp::CompressedTexture2D::2221740878322430548::1776431950::1776432026::1::::<><><>0<>0<>5c06c71faef81136b43e56f2903a6aac<>res://.godot/imported/auto 2.webp-e14e24f99e4d9ecdf155598dbbe24215.ctex::
-::res://imagenes/EXRs/::1779884786
-citrus_orchard_road_puresky_4k.exr::CompressedTexture2D::6506801516981880933::1779884758::1779884814::1::::<><><>0<>0<>0de02c571c31ecf3963a6dd3ba9b3c37<>res://.godot/imported/citrus_orchard_road_puresky_4k.exr-7c0ceb231950b08beab3d9ee1fee6f6c.bptc.ctex::
+::res://imagenes/::1779886429
+auto 2.webp::CompressedTexture2D::2221740878322430548::1779886429::1779886776::1::::<><><>0<>0<>5c06c71faef81136b43e56f2903a6aac<>res://.godot/imported/auto 2.webp-e14e24f99e4d9ecdf155598dbbe24215.ctex::
+::res://imagenes/EXRs/::1779886429
+citrus_orchard_road_puresky_4k.exr::CompressedTexture2D::6506801516981880933::1779886429::1779886777::1::::<><><>0<>0<>0de02c571c31ecf3963a6dd3ba9b3c37<>res://.godot/imported/citrus_orchard_road_puresky_4k.exr-7c0ceb231950b08beab3d9ee1fee6f6c.bptc.ctex::
 ::res://Modelos/::1778246020
 ::res://Modelos/Auto/::1778246020
 Nissan GTR.glb::PackedScene::7008071739971783641::1776230356::1776230380::1::::<><><>0<>0<>0d4cb8263cb54145f87583bb171d8a1b<>res://.godot/imported/Nissan GTR.glb-604b67d292e3850e203c45f88bcb9a80.scn::
@@ -322,16 +322,16 @@ tile-high.png::CompressedTexture2D::3331624401093009880::1741835906::1776403720:
 tile-low.png::CompressedTexture2D::3906330138141765504::1741835906::1776403720::1::::<><><>0<>0<>6c25bdf07061f9795ce63100ea2d2f2d<>res://.godot/imported/tile-low.png-93ced54f57dfd65f6592860c7efbdc25.ctex::
 tile-slant.png::CompressedTexture2D::3751001717537504112::1741835906::1776403720::1::::<><><>0<>0<>d9d0b412efc6a5cb56c1dc45e597fb5f<>res://.godot/imported/tile-slant.png-4a93ba236e6c3cb79d1e56dff803556f.ctex::
 tile-slantHigh.png::CompressedTexture2D::3124077839947266759::1741835906::1776403720::1::::<><><>0<>0<>1216cf66014a798b3966f195ec2063c0<>res://.godot/imported/tile-slantHigh.png-d82ce07723ee86f94c91107f2fb6f99b.ctex::
-::res://scenes/::1779284522
-control.tscn::PackedScene::8528569243747434249::1777315151::0::1::::<><><>0<>0<><>::uid://brtcksw07mvef::::res://control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://bwd3t6b11ix3y::::res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png
-el_mundo_test.tscn::PackedScene::7908440601930268685::1779284522::0::1::::<><><>0<>0<><>::uid://docltc1jwxlf2::::res://prueba_auto_AVANZADO_1.tscn<>uid://bdixhqa6je6gb::::res://Modelos/ciudad/Models/GLB format/road-bend.glb
-Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png::CompressedTexture2D::3938504013858713484::1777036720::1777036149::1::::<><><>0<>0<>319499670d64091d4a34c096982114be<>res://.godot/imported/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png-7ea6c9c3e2793481ca18030632ce5aad.ctex::
-hud.tscn::PackedScene::551021745022253524::1779283735::0::1::::<><><>0<>0<><>::
-NG5Vc.jpg::CompressedTexture2D::3025309807499661642::1777295683::1777295683::1::::<><><>0<>0<>240f68c20bd8cd2c4627d048aca27337<>res://.godot/imported/NG5Vc.jpg-f974b7bbcb5d605882c9b99450509101.ctex::
-options.tscn::PackedScene::4284024728091331973::1778073749::0::1::::<><><>0<>0<><>::uid://dpbw3aut2rln0::::res://scenes/scripts.gd<>uid://bjdqn7tk8dctu::::res://scenes/NG5Vc.jpg
-scripts.gd::GDScript::8215544891270171799::1777294491::0::1::::<>Control<><>0<>0<><>::
-::res://scripts/::1779284522
+::res://scenes/::1779886429
+control.tscn::PackedScene::8528569243747434249::1779886429::0::1::::<><><>0<>0<><>::uid://brtcksw07mvef::::res://control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://bwd3t6b11ix3y::::res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png
+el_mundo_test.tscn::PackedScene::7908440601930268685::1779886429::0::1::::<><><>0<>0<><>::uid://docltc1jwxlf2::::res://prueba_auto_AVANZADO_1.tscn<>uid://bdixhqa6je6gb::::res://Modelos/ciudad/Models/GLB format/road-bend.glb<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr
+Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png::CompressedTexture2D::3938504013858713484::1779886429::1779886776::1::::<><><>0<>0<>319499670d64091d4a34c096982114be<>res://.godot/imported/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png-7ea6c9c3e2793481ca18030632ce5aad.ctex::
+hud.tscn::PackedScene::551021745022253524::1779886429::0::1::::<><><>0<>0<><>::
+NG5Vc.jpg::CompressedTexture2D::3025309807499661642::1779886429::1779886776::1::::<><><>0<>0<>240f68c20bd8cd2c4627d048aca27337<>res://.godot/imported/NG5Vc.jpg-f974b7bbcb5d605882c9b99450509101.ctex::
+options.tscn::PackedScene::4284024728091331973::1779886429::0::1::::<><><>0<>0<><>::uid://dpbw3aut2rln0::::res://scenes/scripts.gd<>uid://bjdqn7tk8dctu::::res://scenes/NG5Vc.jpg
+scripts.gd::GDScript::8215544891270171799::1779886429::0::1::::<>Control<><>0<>0<><>::
+::res://scripts/::1779886429
 camera_springarm_avanzado1.gd::GDScript::4485286633524042925::1778091620::0::1::::<>SpringArm3D<><>0<>0<><>::
 control_auto_prueba1.gd::GDScript::1197587218301049383::1777282176::0::1::::<>VehicleBody3D<><>0<>0<><>::
 prueba_auto_avanzado_controles.gd::GDScript::8577426847858057097::1777282760::0::1::::<>VehicleBody3D<><>0<>0<><>::
-suspension.gd::GDScript::212952028476085704::1779284522::0::1::::<>VehicleBody3D<><>0<>0<><>::
+suspension.gd::GDScript::212952028476085704::1779886429::0::1::::<>VehicleBody3D<><>0<>0<><>::
