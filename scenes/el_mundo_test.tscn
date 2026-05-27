@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://docltc1jwxlf2" path="res://prueba_auto_AVANZADO_1.tscn" id="2_1o6h4"]
 [ext_resource type="PackedScene" uid="uid://bdixhqa6je6gb" path="res://Modelos/ciudad/Models/GLB format/road-bend.glb" id="2_hklov"]
+[ext_resource type="Texture2D" uid="uid://cyx7cnkhkewdh" path="res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr" id="3_lmcvy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1o6h4"]
 size = Vector3(94.346436, 10.690674, 94.71837)
@@ -9,6 +10,16 @@ size = Vector3(94.346436, 10.690674, 94.71837)
 [sub_resource type="BoxShape3D" id="BoxShape3D_hklov"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v70xy"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_52occ"]
+panorama = ExtResource("3_lmcvy")
+
+[sub_resource type="Sky" id="Sky_17t8l"]
+sky_material = SubResource("PanoramaSkyMaterial_52occ")
+
+[sub_resource type="Environment" id="Environment_kla8x"]
+background_mode = 2
+sky = SubResource("Sky_17t8l")
 
 [node name="el_mundo" type="Node3D" unique_id=1818928090]
 transform = Transform3D(0.9996517, -0.012425566, 0.023284584, 0.013013031, 0.9995965, -0.02525032, -0.022961438, 0.025544528, 0.99941, 0, 0, 0)
@@ -46,3 +57,6 @@ mesh = SubResource("BoxMesh_v70xy")
 transform = Transform3D(0.9996517, 0.01301303, -0.022961443, -0.01242557, 0.9995965, 0.025544528, 0.023284584, -0.025250325, 0.99941, -33.45192, 18.956793, -34.214485)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1476297555]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1970737018]
+environment = SubResource("Environment_kla8x")
