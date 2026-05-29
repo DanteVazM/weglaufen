@@ -19,7 +19,8 @@ func _physics_process(delta: float) -> void:
 	#Da "potencia" al auto, en el sentido de que esto hace que avanze
 	var torque = dirrection * max_torque * (1.0 - RPM / max_rpm) #La multiplicacion al final hace que mientras mas gires, mas baja el torque
 	engine_force = torque
-	text_velocity.text = str(int(torque))
+	text_velocity.text = str(int(torque)-300).replace("-", "")
+	
 		
 	steering = lerp(steering, steering_direction * turn_amount, turn_speed * delta)
 	

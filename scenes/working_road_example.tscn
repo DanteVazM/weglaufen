@@ -1,20 +1,24 @@
 [gd_scene format=3 uid="uid://dkw54jvulqilh"]
 
 [ext_resource type="PackedScene" uid="uid://docltc1jwxlf2" path="res://prueba_auto_AVANZADO_1.tscn" id="2_1o6h4"]
-[ext_resource type="ArrayMesh" uid="uid://c2ajiuub5bbsw" path="res://Modelos/ciudad/Models/OBJ format/road-side.obj" id="3_52occ"]
+[ext_resource type="ArrayMesh" uid="uid://b1oa3l5tgohqe" path="res://Modelos/ciudad/Models/OBJ format/road-driveway-single.obj" id="3_52occ"]
 [ext_resource type="Texture2D" uid="uid://cyx7cnkhkewdh" path="res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr" id="3_lmcvy"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_52occ"]
 panorama = ExtResource("3_lmcvy")
+energy_multiplier = 0.3
 
 [sub_resource type="Sky" id="Sky_17t8l"]
 sky_material = SubResource("PanoramaSkyMaterial_52occ")
+radiance_size = 1
 
 [sub_resource type="Environment" id="Environment_kla8x"]
 background_mode = 2
 sky = SubResource("Sky_17t8l")
+ambient_light_energy = 0.15
+reflected_light_source = 2
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_34cpg"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_17t8l"]
 
 [node name="el_mundo" type="Node3D" unique_id=1818928090]
 transform = Transform3D(0.9996517, -0.012425566, 0.023284584, 0.013013031, 0.9995965, -0.02525032, -0.022961438, 0.025544528, 0.99941, 0, 0, 0)
@@ -30,12 +34,11 @@ transform = Transform3D(0.9996517, 0.01301303, -0.022961443, -0.01242557, 0.9995
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1970737018]
 environment = SubResource("Environment_kla8x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=50269596]
-transform = Transform3D(8.20231, 1.3387762e-09, -2.2351742e-08, -1.5366822e-08, 1.0332744, 2.2351742e-08, 2.9802322e-08, 1.8626451e-09, 4.807929, 0, 0, 0)
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=8970863]
+transform = Transform3D(141.37454, -1.0477379e-09, -1.7881393e-06, -1.7136335e-07, 1.2382666, 1.66893e-06, 4.7683716e-07, 7.450581e-09, 81.988014, -30.420649, -0.4316473, -32.765423)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2075488061]
-transform = Transform3D(0.9999996, -5.252332e-10, -1.9557774e-08, -2.5052577e-05, 0.9999697, 8.583069e-06, 9.573996e-07, -9.604264e-10, 0.99998087, 0, 0, 0)
-shape = SubResource("BoxShape3D_34cpg")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=753031133]
+shape = SubResource("BoxShape3D_17t8l")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1790468073]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2" unique_id=1841605249]
 mesh = ExtResource("3_52occ")
