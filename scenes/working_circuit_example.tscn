@@ -2,7 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://docltc1jwxlf2" path="res://prueba_auto_AVANZADO_1.tscn" id="1_vqf37"]
 [ext_resource type="Texture2D" uid="uid://cyx7cnkhkewdh" path="res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr" id="2_1ykbg"]
-[ext_resource type="ArrayMesh" uid="uid://b1oa3l5tgohqe" path="res://Modelos/ciudad/Models/OBJ format/road-driveway-single.obj" id="3_7q84b"]
+[ext_resource type="ArrayMesh" uid="uid://b2ovrodo85qx7" path="res://Modelos/ciudad/Models/OBJ format/construction-barrier.obj" id="3_7q84b"]
+[ext_resource type="ArrayMesh" uid="uid://eipbjvjfwmp5" path="res://Modelos/ciudad/Models/OBJ format/road-curve.obj" id="3_vqf37"]
+[ext_resource type="ArrayMesh" uid="uid://dwqynxoxg5jwo" path="res://Modelos/ciudad/Models/OBJ format/road-straight.obj" id="4_1ykbg"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_52occ"]
 panorama = ExtResource("2_1ykbg")
@@ -18,11 +20,12 @@ sky = SubResource("Sky_17t8l")
 ambient_light_energy = 0.15
 reflected_light_source = 2
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_me5p3"]
+[sub_resource type="BoxMesh" id="BoxMesh_1ykbg"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_vqf37"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_7q84b"]
+size = Vector3(1, 1, 2.1551514)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_vqf37"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_o6b7i"]
 
 [node name="el_mundo" type="Node3D" unique_id=1818928090]
 transform = Transform3D(0.9996517, -0.012425566, 0.023284584, 0.013013031, 0.9995965, -0.02525032, -0.022961438, 0.025544528, 0.99941, 0, 0, 0)
@@ -38,21 +41,49 @@ transform = Transform3D(0.9996517, 0.013013031, -0.022961445, -0.01242557, 0.999
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1970737018]
 environment = SubResource("Environment_kla8x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1578606821]
-transform = Transform3D(150.42894, 0, 0, 0, 1.1960268, 0, 0, 0, 262.1787, 0, 0, 0)
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=127230169]
+transform = Transform3D(-597.77216, 0.009150883, 0.02421093, 7.447502, 0.734036, 17.89523, -0.17556667, -0.01941383, 676.62775, -180.75243, 4.9548044, 102.99549)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1469235496]
-shape = SubResource("BoxShape3D_me5p3")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1201419432]
+transform = Transform3D(0.5868391, 6.785683e-13, 9.313226e-10, 1.9744039e-07, 1.0003147, 5.9604645e-07, -3.7252903e-09, -2.3874236e-12, 0.5701629, -0.11400509, -1.043969, -0.13076425)
+mesh = SubResource("BoxMesh_1ykbg")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1951630985]
-mesh = SubResource("BoxMesh_vqf37")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2099599916]
+transform = Transform3D(0.58899736, -2.5059546e-09, 1.6763806e-08, 3.883615e-07, 0.25699982, 4.172325e-07, -2.8871e-08, -4.8316906e-13, 0.24899957, -0.118441075, 0.26377532, -0.1456331)
+shape = SubResource("BoxShape3D_7q84b")
 
-[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=1441081910]
-transform = Transform3D(-0.60267663, -0.015087828, -81.98119, 5.41684, 1.237263, -1.011658, 141.26945, -0.047506016, -0.3109547, -32.80564, 2.2216482, 71.042725)
+[node name="Obstaculo" type="StaticBody3D" parent="." unique_id=1238030303]
+transform = Transform3D(15.896046, 0.21780728, -7.910054, -0.19758637, 16.730871, 8.79991, 0.37026194, -0.4226305, 344.28943, 26.998472, 0.2916263, 14.964354)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=929009286]
-shape = SubResource("BoxShape3D_vqf37")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2" unique_id=1838212975]
-transform = Transform3D(1, 0, 0, 1.1920929e-07, 1, -5.401671e-08, 7.450581e-09, -6.366463e-11, 1, 0.005916536, 0.9033616, -0.5318998)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstaculo" unique_id=421246625]
 mesh = ExtResource("3_7q84b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstaculo" unique_id=532085531]
+transform = Transform3D(0.10990107, -2.2610854e-16, 0, 1.6458121e-16, 0.22877955, -7.771561e-16, -1.110223e-16, 2.7755576e-16, 0.23141599, 0, 0, 0)
+shape = SubResource("BoxShape3D_o6b7i")
+
+[node name="Pista" type="Node3D" parent="." unique_id=1135064620]
+
+[node name="RoadCurve" type="MeshInstance3D" parent="Pista" unique_id=1867972138]
+transform = Transform3D(70.86654, 0.013013039, -1.3040727, -0.88086474, 0.9995965, 1.4507761, 1.6506743, -0.025250342, 56.76049, -39.7372, -0.7026757, -65.9856)
+mesh = ExtResource("3_vqf37")
+
+[node name="RoadCurve3" type="MeshInstance3D" parent="Pista" unique_id=2101987964]
+transform = Transform3D(0.02012527, 0.015696796, -70.987526, 1.2812613, 0.9992064, 1.1151619, 56.46714, -0.022677965, -3.695488e-06, -40.507397, 3.5820127, 103.237366)
+mesh = ExtResource("3_vqf37")
+
+[node name="RoadCurve2" type="MeshInstance3D" parent="Pista" unique_id=521951588]
+transform = Transform3D(-0.01801598, 0.012209583, 70.60428, -1.4744219, 0.99931765, -0.86263746, -56.310028, -0.026170019, -2.1457672e-06, -5.4330378, 0.9898777, 18.697319)
+mesh = ExtResource("4_1ykbg")
+
+[node name="RoadCurve4" type="MeshInstance3D" parent="Pista" unique_id=1328021498]
+transform = Transform3D(-70.10645, 0.013013024, 3.0702767, 0.8166355, 0.9995965, -1.4782495, -3.80157, -0.02525031, -56.93791, -179.31601, 5.302097, 99.79465)
+mesh = ExtResource("3_vqf37")
+
+[node name="RoadCurve5" type="MeshInstance3D" parent="Pista" unique_id=1371624768]
+transform = Transform3D(1.7132897, 0.010398374, 71.64469, -1.5860866, 0.9991072, -0.6841572, -56.195473, -0.027882239, 2.2036169, -171.96414, 0.9357097, -69.270744)
+mesh = ExtResource("3_vqf37")
+
+[node name="RoadCurve6" type="MeshInstance3D" parent="Pista" unique_id=1211176551]
+transform = Transform3D(-1.7158127, 0.013780402, -71.25126, 1.3861458, 0.9993334, 0.92894566, 56.048927, -0.024292653, -2.2041726, -210.32185, 3.5471005, 14.339598)
+mesh = ExtResource("4_1ykbg")
