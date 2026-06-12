@@ -17,13 +17,13 @@ sky = SubResource("Sky_17t8l")
 [sub_resource type="BoxShape3D" id="BoxShape3D_34cpg"]
 
 [node name="el_mundo" type="Node3D" unique_id=1818928090]
-transform = Transform3D(0.9996517, -0.012425566, 0.023284584, 0.013013031, 0.9995965, -0.02525032, -0.022961438, 0.025544528, 0.99941, 0, 0, 0)
+transform = Transform3D(0.9996517, -0.012425566, 0.023284584, 0.013013031, 0.9995965, -0.02525032, -0.022961438, 0.025544528, 0.99941, 0, -0.055980682, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=962126440]
 transform = Transform3D(1, 0, 0, 0, -0.12301254, 0.9924051, 0, -0.9924051, -0.12301254, 0, 47.880245, 0)
 
 [node name="Nissan GTR" parent="." unique_id=1057592833 instance=ExtResource("2_1o6h4")]
-transform = Transform3D(0.9996517, 0.01301303, -0.022961443, -0.01242557, 0.9995965, 0.025544528, 0.023284584, -0.025250325, 0.99941, -33.45192, 18.956793, -34.214485)
+transform = Transform3D(-0.011130851, 0.013013051, -0.99985325, 0.02539571, 0.9995965, 0.012726972, 0.9996158, -0.025250327, -0.01145685, 0.9064735, 0.8267028, -0.7248647)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1476297555]
 
