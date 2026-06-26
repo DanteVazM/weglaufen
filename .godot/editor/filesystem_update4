@@ -1,1 +1,5 @@
-res://scenes/working_circuit_example.tscn
+res://scenes/options.tscn
+res://control.gd
+res://scenes/control.tscn
+res://scenes/control.gd
+res://scenes/puntuaciones.tscn

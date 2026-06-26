@@ -1,3 +1,7 @@
+TextureRect
+VBoxContainer
+ColorRect
+Button
 CollisionShape3D
 MeshInstance3D
 StaticBody3D
@@ -6,9 +10,5 @@ RigidBody3D
 WorldEnvironment
 Label
 CanvasLayer
-VBoxContainer
 OptionButton
 HSlider
-TextureRect
-ColorRect
-Button

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://iml0eiqeof0e"]
+
+[node name="Control" type="Control" unique_id=341915730]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 10.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1669545027]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 1152.0
+offset_bottom = 651.0
+color = Color(0.59142566, 0.11278593, 0.11278593, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect" unique_id=1017253180]
+layout_mode = 0
+offset_right = 1158.0
+offset_bottom = 646.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=378654852]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 650.0

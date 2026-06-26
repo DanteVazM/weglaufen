@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dtrkj3s1jbrk0"]
 
-[ext_resource type="Script" uid="uid://brtcksw07mvef" path="res://control.gd" id="1_r67kn"]
+[ext_resource type="Script" uid="uid://c12l3vddylqds" path="res://scenes/control.gd" id="1_brbbq"]
 [ext_resource type="Texture2D" uid="uid://6wh0okin8vua" path="res://imagenes/auto 2.webp" id="2_brbbq"]
 [ext_resource type="Texture2D" uid="uid://bwd3t6b11ix3y" path="res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png" id="3_brbbq"]
 
@@ -11,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_r67kn")
+script = ExtResource("1_brbbq")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=887343839]
 layout_mode = 1
@@ -32,14 +32,15 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -3.0
-offset_top = 2.0
+offset_top = -11.0
 offset_right = -1.0
-offset_bottom = 12.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_brbbq")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=1357359677]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -54,20 +55,56 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 22
 
-[node name="jugar" type="Button" parent="ColorRect/VBoxContainer" unique_id=998093092]
-layout_mode = 2
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=111973071]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -11.0
+offset_right = 1148.0
+offset_bottom = 140.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect" unique_id=822478031]
+layout_mode = 0
+offset_top = 482.0
+offset_right = 1148.0
+offset_bottom = 633.0
+color = Color(0, 0, 0, 1)
+
+[node name="salir" type="Button" parent="ColorRect/ColorRect2" unique_id=1819570885]
+layout_mode = 0
+offset_left = 875.0
+offset_top = 57.0
+offset_right = 1138.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 40
+text = "salir"
+
+[node name="jugar" type="Button" parent="ColorRect/ColorRect2" unique_id=998093092]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 55.0
+offset_right = 588.0
+offset_bottom = 118.0
 theme_override_font_sizes/font_size = 40
 text = "jugar"
 
-[node name="opciones" type="Button" parent="ColorRect/VBoxContainer" unique_id=657997210]
-layout_mode = 2
+[node name="opciones" type="Button" parent="ColorRect/ColorRect2" unique_id=657997210]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 53.0
+offset_right = 299.0
+offset_bottom = 116.0
 theme_override_font_sizes/font_size = 40
 text = "opciones"
 
-[node name="salir" type="Button" parent="ColorRect/VBoxContainer" unique_id=1819570885]
-layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "salir"
+[node name="puntuaciones" type="Button" parent="ColorRect/ColorRect2" unique_id=790987189]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 55.0
+offset_right = 860.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 32
+text = "Puntuaciones"
 
 [node name="opciones_screen" type="TextureRect" parent="." unique_id=1225603518]
 visible = false
@@ -84,6 +121,7 @@ grow_vertical = 2
 texture = ExtResource("3_brbbq")
 expand_mode = 1
 
-[connection signal="pressed" from="ColorRect/VBoxContainer/jugar" to="." method="_on_jugar_pressed"]
-[connection signal="pressed" from="ColorRect/VBoxContainer/opciones" to="." method="_on_opciones_pressed"]
-[connection signal="pressed" from="ColorRect/VBoxContainer/salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="ColorRect/ColorRect2/salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="ColorRect/ColorRect2/jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="ColorRect/ColorRect2/opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="ColorRect/ColorRect2/puntuaciones" to="." method="_on_puntuaciones_pressed"]
