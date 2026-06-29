@@ -1,3 +1,4 @@
+Label
 TextureRect
 VBoxContainer
 ColorRect
@@ -8,7 +9,6 @@ StaticBody3D
 Node3D
 RigidBody3D
 WorldEnvironment
-Label
 CanvasLayer
 OptionButton
 HSlider
