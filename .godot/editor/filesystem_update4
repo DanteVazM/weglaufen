@@ -1,1 +1,4 @@
 res://scenes/control.tscn
+res://scenes/options.tscn
+res://scenes/puntuaciones.gd
+res://scenes/puntuaciones.tscn

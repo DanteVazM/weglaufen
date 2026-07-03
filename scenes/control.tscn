@@ -4,6 +4,44 @@
 [ext_resource type="Texture2D" uid="uid://6wh0okin8vua" path="res://imagenes/auto 2.webp" id="2_brbbq"]
 [ext_resource type="FontFile" uid="uid://djmy31cdlxexq" path="res://fonts/Designer.otf" id="3_8n18e"]
 [ext_resource type="Texture2D" uid="uid://bwd3t6b11ix3y" path="res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png" id="3_brbbq"]
+[ext_resource type="Texture2D" uid="uid://c38jgt3x3rvt1" path="res://imagenes/negro.jpg" id="5_tjwpk"]
+
+[sub_resource type="Animation" id="Animation_lpubu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lt2xq"]
+resource_name = "fade_out"
+length = 1.0666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.0666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1p5nq"]
+_data = {
+&"RESET": SubResource("Animation_lpubu"),
+&"fade_out": SubResource("Animation_lt2xq")
+}
 
 [node name="Control" type="Control" unique_id=15099002]
 layout_mode = 3
@@ -144,6 +182,15 @@ theme_override_fonts/font = ExtResource("3_8n18e")
 theme_override_font_sizes/font_size = 57
 text = "weglaufen"
 horizontal_alignment = 1
+
+[node name="Negro" type="Sprite2D" parent="." unique_id=2036395395]
+position = Vector2(582, 325)
+scale = Vector2(0.3705128, 0.15721153)
+texture = ExtResource("5_tjwpk")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Negro" unique_id=1038930986]
+libraries/ = SubResource("AnimationLibrary_1p5nq")
+autoplay = &"fade_out"
 
 [connection signal="pressed" from="ColorRect/ColorRect2/salir" to="." method="_on_salir_pressed"]
 [connection signal="pressed" from="ColorRect/ColorRect2/jugar" to="." method="_on_jugar_pressed"]

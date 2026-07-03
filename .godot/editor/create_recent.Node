@@ -1,8 +1,9 @@
+Button
+AnimationPlayer
 Label
 TextureRect
 VBoxContainer
 ColorRect
-Button
 CollisionShape3D
 MeshInstance3D
 StaticBody3D
@@ -11,4 +12,3 @@ RigidBody3D
 WorldEnvironment
 CanvasLayer
 OptionButton
-HSlider
