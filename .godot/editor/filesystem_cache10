@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1783082739
+::res://::1785934053
 control.gd::GDScript::3618994475376513377::1782480200::0::1::::<>Control<><>0<>0<><>::
 GUIA.md::TextFile::-1::1781268023::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1980151826230133846::1781268002::1781268337::1::::<><><>0<>0<>cecaca39f4779def21d8a05ad0c74534<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -12,7 +12,7 @@ prueba_auto_AVANZADO_1.tscn::PackedScene::8146736580175350441::1781268023::0::1:
 road-curve-intersection-barrier.glb::PackedScene::5470066388398599921::1781268002::1781268341::1::::<><><>0<>0<>77f85338db9422aa19ff5a9270640e24<>res://.godot/imported/road-curve-intersection-barrier.glb-3ab61860af3856c851044ee84560bfbd.scn::
 ::res://fonts/::1782738867
 Designer.otf::FontFile::7817242755774672118::1782738867::1782738867::1::::<><><>0<>0<>f461d9bec3520b30f5eb433ee29cb67c<>res://.godot/imported/Designer.otf-20eba5e9a89ee0e925785bdc44f9f7ef.fontdata::
-::res://imagenes/::1783083516
+::res://imagenes/::1783083517
 auto 2.webp::CompressedTexture2D::2221740878322430548::1781268023::1781268337::1::::<><><>0<>0<>5c06c71faef81136b43e56f2903a6aac<>res://.godot/imported/auto 2.webp-e14e24f99e4d9ecdf155598dbbe24215.ctex::
 negro.jpg::CompressedTexture2D::6806811665114710684::1783083516::1783083517::1::::<><><>0<>0<>71b7a9fd2f9e67d6c2077e8e76a54d42<>res://.godot/imported/negro.jpg-c638a56ad77d494d7acdb0117e5c0001.ctex::
 ::res://imagenes/EXRs/::1781268338
@@ -326,14 +326,15 @@ tile-high.png::CompressedTexture2D::3331624401093009880::1781268002::1781268337:
 tile-low.png::CompressedTexture2D::3906330138141765504::1781268002::1781268337::1::::<><><>0<>0<>6c25bdf07061f9795ce63100ea2d2f2d<>res://.godot/imported/tile-low.png-93ced54f57dfd65f6592860c7efbdc25.ctex::
 tile-slant.png::CompressedTexture2D::3751001717537504112::1781268002::1781268337::1::::<><><>0<>0<>d9d0b412efc6a5cb56c1dc45e597fb5f<>res://.godot/imported/tile-slant.png-4a93ba236e6c3cb79d1e56dff803556f.ctex::
 tile-slantHigh.png::CompressedTexture2D::3124077839947266759::1781268002::1781268337::1::::<><><>0<>0<>1216cf66014a798b3966f195ec2063c0<>res://.godot/imported/tile-slantHigh.png-d82ce07723ee86f94c91107f2fb6f99b.ctex::
-::res://scenes/::1782740091
+::res://scenes/::1784122765
 control.gd::GDScript::6654208498278021808::1782480443::0::1::::<>Control<><>0<>0<><>::
-control.tscn::PackedScene::8528569243747434249::1782740091::0::1::::<><><>0<>0<><>::uid://c12l3vddylqds::::res://scenes/control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://djmy31cdlxexq::::res://fonts/Designer.otf<>uid://bwd3t6b11ix3y::::res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png
+control.tscn::PackedScene::8528569243747434249::1783084629::0::1::::<><><>0<>0<><>::uid://c12l3vddylqds::::res://scenes/control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://djmy31cdlxexq::::res://fonts/Designer.otf<>uid://bwd3t6b11ix3y::::res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
 Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png::CompressedTexture2D::3938504013858713484::1781268023::1781268338::1::::<><><>0<>0<>319499670d64091d4a34c096982114be<>res://.godot/imported/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png-7ea6c9c3e2793481ca18030632ce5aad.ctex::
 hud.tscn::PackedScene::551021745022253524::1781268023::0::1::::<><><>0<>0<><>::
 NG5Vc.jpg::CompressedTexture2D::3025309807499661642::1781268023::1781268338::1::::<><><>0<>0<>240f68c20bd8cd2c4627d048aca27337<>res://.godot/imported/NG5Vc.jpg-f974b7bbcb5d605882c9b99450509101.ctex::
-options.tscn::PackedScene::4284024728091331973::1782479803::0::1::::<><><>0<>0<><>::uid://dpbw3aut2rln0::::res://scenes/scripts.gd<>uid://bjdqn7tk8dctu::::res://scenes/NG5Vc.jpg
-puntuaciones.tscn::PackedScene::586996037105734810::1782481006::0::1::::<><><>0<>0<><>::
+options.tscn::PackedScene::4284024728091331973::1783084049::0::1::::<><><>0<>0<><>::uid://dpbw3aut2rln0::::res://scenes/scripts.gd<>uid://bjdqn7tk8dctu::::res://scenes/NG5Vc.jpg<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
+puntuaciones.gd::GDScript::1181644836223011518::1783085072::0::1::::<>Control<><>0<>0<><>::
+puntuaciones.tscn::PackedScene::586996037105734810::1784122765::0::1::::<><><>0<>0<><>::uid://q3nruuc8kp0q::::res://scenes/puntuaciones.gd<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
 scripts.gd::GDScript::8215544891270171799::1782307202::0::1::::<>Control<><>0<>0<><>::
 working_circuit_example.tscn::PackedScene::3539784809125090437::1781268023::0::1::::<><><>0<>0<><>::uid://docltc1jwxlf2::::res://prueba_auto_AVANZADO_1.tscn<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr<>uid://b2ovrodo85qx7::::res://Modelos/ciudad/Models/OBJ format/construction-barrier.obj<>uid://eipbjvjfwmp5::::res://Modelos/ciudad/Models/OBJ format/road-curve.obj<>uid://dwqynxoxg5jwo::::res://Modelos/ciudad/Models/OBJ format/road-straight.obj
 working_road_example.tscn::PackedScene::7908440601930268685::1781873082::0::1::::<><><>0<>0<><>::uid://docltc1jwxlf2::::res://prueba_auto_AVANZADO_1.tscn<>uid://b1oa3l5tgohqe::::res://Modelos/ciudad/Models/OBJ format/road-driveway-single.obj<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr
