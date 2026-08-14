@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://xkj3p4t5x6w1"]
 
 [ext_resource type="Script" uid="uid://mpv4ldegymky" path="res://player.gd" id="1_2jh14"]
+[ext_resource type="Script" uid="uid://378c0hufmqt4" path="res://enemy.gd" id="2_70f7c"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_70f7c"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -18,6 +19,15 @@ glow_enabled = true
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_5d3jg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wan0n"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_2jh14"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_70f7c"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_2jh14"]
+vertices = PackedVector3Array(-12.834693, 0.5, -10.832031, -12.834693, 0.5, 10.917969, 12.915307, 0.5, 10.917969, 12.915307, 0.5, -10.832031)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+cell_height = 0.1
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_auc41"]
 
@@ -46,12 +56,29 @@ shape = SubResource("CapsuleShape3D_wan0n")
 [node name="Camera3D" type="Camera3D" parent="player" unique_id=623779895]
 transform = Transform3D(0.9990422, 3.2208631e-09, -0.043758884, 0.012350549, 0.9593436, 0.28197062, 0.04197981, -0.282241, 0.95842457, 0, 1.3013644, 3.64498)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1503594603]
+[node name="enemy" type="CharacterBody3D" parent="." unique_id=211039106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6343026, 1.7107613)
+script = ExtResource("2_70f7c")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=251298350]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="enemy" unique_id=1297843002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9106808, -0.30401874, 0.29234385)
+mesh = SubResource("CapsuleMesh_2jh14")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="enemy" unique_id=796316520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3156228, -0.47384286, 0)
+shape = SubResource("CapsuleShape3D_70f7c")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="enemy" unique_id=1073287771]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=133028381]
+navigation_mesh = SubResource("NavigationMesh_2jh14")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D" unique_id=1503594603]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/StaticBody3D" unique_id=251298350]
 transform = Transform3D(13.337073, 0, 0, 0, 1.1477151, 0, 0, 0, 11.335256, 0.0023804903, -0.009088278, 0.0043575764)
 mesh = SubResource("PlaneMesh_auc41")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=173130225]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D" unique_id=173130225]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.027679443, -0.24301147, -0.033355713)
 shape = SubResource("BoxShape3D_ltv3l")

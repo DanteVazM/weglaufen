@@ -1,9 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1786107436
+::res://::1786711659
 control.gd::GDScript::3618994475376513377::1785936152::0::1::::<>Control<><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1786450087::0::1::::<><><>0<>0<><>::
 GUIA.md::TextFile::-1::1781268023::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1980151826230133846::1781268002::1781268337::1::::<><><>0<>0<>cecaca39f4779def21d8a05ad0c74534<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 lebomboclad.txt::TextFile::-1::1781268377::0::1::::<><><>0<>0<><>::
+mapa.tscn::PackedScene::1635584469933461818::1786450129::0::1::::<><><>0<>0<><>::uid://mpv4ldegymky::::res://player.gd
+player.gd::GDScript::874559217420605052::1786108056::0::1::::<>CharacterBody3D<><>0<>0<><>::
 prueba_auto1.tscn::PackedScene::5260518509311060895::1781268002::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
 prueba_auto2.tscn::PackedScene::4745107150932541570::1781268002::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
 prueba_auto3.tscn::PackedScene::497008739406361102::1781268002::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
