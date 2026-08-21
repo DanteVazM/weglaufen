@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="juego de carriles"
-run/main_scene="uid://dtrkj3s1jbrk0"
+run/main_scene="uid://gu3rik8swym2"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [input]
 

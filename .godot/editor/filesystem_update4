@@ -1,1 +1,2 @@
-res://scenes/working_circuit_example.tscn
+res://scripts/control/prueba_auto_avanzado_3.gd
+res://scenes/control.gd

@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://iml0eiqeof0e"]
+
+[ext_resource type="Script" uid="uid://q3nruuc8kp0q" path="res://scenes/puntuaciones.gd" id="1_ks6j8"]
+[ext_resource type="Texture2D" uid="uid://c38jgt3x3rvt1" path="res://imagenes/negro.jpg" id="2_26ueq"]
+
+[sub_resource type="Animation" id="Animation_lpubu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lt2xq"]
+resource_name = "fade_out"
+length = 1.0666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.0666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4qmve"]
+_data = {
+&"RESET": SubResource("Animation_lpubu"),
+&"fade_out": SubResource("Animation_lt2xq")
+}
+
+[node name="Control" type="Control" unique_id=341915730]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 10.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ks6j8")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1669545027]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 1152.0
+offset_bottom = 651.0
+color = Color(0.59142566, 0.11278593, 0.11278593, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect" unique_id=1017253180]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 5.0
+offset_right = 1155.0
+offset_bottom = 651.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=378654852]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.042000003
+anchor_bottom = 0.042000003
+offset_left = 268.0
+offset_top = 488.658
+offset_right = 841.0
+offset_bottom = 519.658
+
+[node name="atras" type="Button" parent="ColorRect/VBoxContainer" unique_id=139829724]
+layout_mode = 2
+text = "atras"
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/atras" unique_id=47530036]
+layout_mode = 0
+offset_left = 140.0
+offset_top = -488.0
+offset_right = 407.0
+offset_bottom = -441.0
+theme_override_font_sizes/font_size = 34
+text = "RECORDS"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect/VBoxContainer/atras" unique_id=850090617]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -429.0
+offset_right = 561.0
+offset_bottom = -17.0
+text = "mango:00492
+agus:48895
+joaco:34976
+rodrigo:49825
+pela:87342
+lucas:45245
+manu:78534
+milena:13542
+martiuna:54645
+sebastian:48156
+felipe:48921
+jerry:85132
+paco:54612
+gaston:41235
+messi:99999
+gustavo:04853"
+
+[node name="Negro" type="Sprite2D" parent="." unique_id=1181472324]
+position = Vector2(582, 325)
+scale = Vector2(0.3705128, 0.15721153)
+texture = ExtResource("2_26ueq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Negro" unique_id=1693951508]
+libraries/ = SubResource("AnimationLibrary_4qmve")
+autoplay = &"fade_out"
+
+[connection signal="pressed" from="ColorRect/VBoxContainer/atras" to="." method="_on_atras_pressed"]
