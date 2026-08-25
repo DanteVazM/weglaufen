@@ -9,7 +9,6 @@ extends VehicleBody3D
 @export var wheel_traction_left: VehicleWheel3D
 @export var wheel_traction_right: VehicleWheel3D
 
-var hp = 50
 var max_hp = 50
 
 # Called when the node enters the scene tree for the first time.
@@ -17,7 +16,7 @@ func _ready() -> void:
 	HPbar.max_value = max_hp
 
 func update_HUD():
-	HPbar.value = hp
+	HPbar.value = global.hp
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

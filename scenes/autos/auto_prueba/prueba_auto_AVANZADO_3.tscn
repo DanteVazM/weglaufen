@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dfwvvwo2c7itu" path="res://scripts/control/prueba_auto_avanzado_3.gd" id="1_ki4n8"]
 [ext_resource type="Texture2D" uid="uid://nyrtl031ciyj" path="res://sprites/mercurio-grey.jpg" id="2_ajgh6"]
 [ext_resource type="Texture2D" uid="uid://bbgue5em8xg2v" path="res://sprites/25tmag-blue-slide-6I28-mediumSquareAt3X.jpg" id="3_fsvkf"]
+[ext_resource type="Script" uid="uid://dbj54ftrkvigs" path="res://scripts/hurt_box.gd" id="4_fsvkf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_guyxo"]
 resource_name = "chasis"
@@ -561,3 +562,6 @@ offset_right = 1904.0
 offset_bottom = 2401.0
 texture_under = ExtResource("2_ajgh6")
 texture_progress = ExtResource("3_fsvkf")
+
+[node name="HurtBox" type="Area3D" parent="." unique_id=404722720]
+script = ExtResource("4_fsvkf")

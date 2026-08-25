@@ -1,2 +1,4 @@
+res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn
+res://scripts/global.gd
+res://scripts/hurt_box.gd
 res://scripts/control/prueba_auto_avanzado_3.gd
-res://scenes/control.gd
