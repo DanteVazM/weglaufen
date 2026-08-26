@@ -11,6 +11,8 @@ extends VehicleBody3D
 
 var max_hp = 50
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	HPbar.max_value = max_hp
@@ -36,3 +38,7 @@ func _physics_process(delta: float) -> void:
 
 	if dirrection == 0:
 		brake = 3
+
+
+func _on_hurt_box_hurted() -> void:
+	print("HURT")

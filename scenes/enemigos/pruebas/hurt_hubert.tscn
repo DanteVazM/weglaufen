@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bdeqh5lkdp7n0"]
+
+[ext_resource type="Script" uid="uid://g21uq3jpy3e8" path="res://scripts/hit_box_demo.gd" id="1_vt4er"]
+[ext_resource type="Script" uid="uid://cna5ewelldacw" path="res://scripts/hurt_hubert.gd" id="1_xm28p"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vt4er"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7272a"]
+
+[node name="Hurt Hubert" type="Node3D" unique_id=720952789]
+transform = Transform3D(1, 0, 0, 0, 2.1638489, 0, 0, 0, 1, 0, 0.945917, 0)
+script = ExtResource("1_xm28p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=470637457]
+mesh = SubResource("BoxMesh_vt4er")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=34622245]
+script = ExtResource("1_vt4er")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=872625814]
+shape = SubResource("BoxShape3D_7272a")

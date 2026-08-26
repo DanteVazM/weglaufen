@@ -1,4 +1,7 @@
 res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn
-res://scripts/global.gd
-res://scripts/hurt_box.gd
 res://scripts/control/prueba_auto_avanzado_3.gd
+res://scenes/enemigos/pruebas/hit_box.tscn
+res://scripts/hit_box_demo.gd
+res://scenes/mundos/ciudad_demo.tscn
+res://scenes/enemigos/pruebas/hurt_hubert.tscn
+res://scripts/hurt_hubert.gd

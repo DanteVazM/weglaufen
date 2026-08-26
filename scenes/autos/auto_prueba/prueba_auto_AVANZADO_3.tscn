@@ -565,3 +565,9 @@ texture_progress = ExtResource("3_fsvkf")
 
 [node name="HurtBox" type="Area3D" parent="." unique_id=404722720]
 script = ExtResource("4_fsvkf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="HurtBox" unique_id=378678585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019187927, 0.31484985, 0.122680664)
+shape = SubResource("BoxShape3D_ki4n8")
+
+[connection signal="hurted" from="HurtBox" to="." method="_on_hurt_box_hurted"]

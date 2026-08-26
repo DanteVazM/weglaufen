@@ -1,9 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1787657009
+::res://::1787747231
 export_presets.cfg::TextFile::-1::1787264930::0::1::::<><><>0<>0<><>::
 GUIA.md::TextFile::-1::1787264930::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1980151826230133846::1787264930::1787264930::1::::<><><>0<>0<>cecaca39f4779def21d8a05ad0c74534<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 road-curve-intersection-barrier.glb::PackedScene::5470066388398599921::1787264930::1787264930::1::::<><><>0<>0<>77f85338db9422aa19ff5a9270640e24<>res://.godot/imported/road-curve-intersection-barrier.glb-3ab61860af3856c851044ee84560bfbd.scn::
+tutorial.txt::TextFile::-1::1787659678::0::1::::<><><>0<>0<><>::
 ::res://imagenes/::1787318454
 auto 2.webp::CompressedTexture2D::2221740878322430548::1787264932::1787264932::1::::<><><>0<>0<>5c06c71faef81136b43e56f2903a6aac<>res://.godot/imported/auto 2.webp-e14e24f99e4d9ecdf155598dbbe24215.ctex::
 Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png::CompressedTexture2D::3938504013858713484::1787264932::1787264932::1::::<><><>0<>0<>333eaf027b0feb0e88da55285a1467c7<>res://.godot/imported/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png-f4cff75204fc729cff6d518da81da1b9.ctex::
@@ -381,34 +382,38 @@ options.tscn::PackedScene::4284024728091331973::1787264940::0::1::::<><><>0<>0<>
 puntuaciones.gd::GDScript::1181644836223011518::1787264940::0::1::::<>Control<><>0<>0<><>::
 puntuaciones.tscn::PackedScene::586996037105734810::1787264940::0::1::::<><><>0<>0<><>::uid://q3nruuc8kp0q::::res://scenes/puntuaciones.gd<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
 ::res://scenes/autos/::1787318454
-::res://scenes/autos/auto_prueba/::1787318455
+::res://scenes/autos/auto_prueba/::1787748123
 prueba_auto1.tscn::PackedScene::5260518509311060895::1781687448::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control/control_auto_prueba1.gd
 prueba_auto2.tscn::PackedScene::4745107150932541570::1781687448::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control/control_auto_prueba1.gd
 prueba_auto3.tscn::PackedScene::497008739406361102::1781687448::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control/control_auto_prueba1.gd
 prueba_auto4.tscn::PackedScene::7409943762860330318::1781687448::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control/control_auto_prueba1.gd
 prueba_auto_AVANZADO_1.tscn::PackedScene::8146736580175350441::1781687470::0::1::::<><><>0<>0<><>::uid://dbfj2336jcpk::::res://scripts/control/control_avanzado_alfa1.gd<>uid://b45yar8adh2xl::::res://scripts/camera_springarm_avanzado1.gd
 prueba_auto_AVANZADO_2.tscn::PackedScene::4134488458970984641::1783069950::0::1::::<><><>0<>0<><>::uid://dbfj2336jcpk::::res://scripts/control/control_avanzado_alfa1.gd<>uid://b45yar8adh2xl::::res://scripts/camera_springarm_avanzado1.gd
-prueba_auto_AVANZADO_3.tscn::PackedScene::54476418551678738::1786093698::0::1::::<><><>0<>0<><>::uid://dfwvvwo2c7itu::::res://scripts/control/prueba_auto_avanzado_3.gd<>uid://nyrtl031ciyj::::res://sprites/mercurio-grey.jpg<>uid://bbgue5em8xg2v::::res://sprites/25tmag-blue-slide-6I28-mediumSquareAt3X.jpg
+prueba_auto_AVANZADO_3.tscn::PackedScene::54476418551678738::1787748123::0::1::::<><><>0<>0<><>::uid://dfwvvwo2c7itu::::res://scripts/control/prueba_auto_avanzado_3.gd<>uid://nyrtl031ciyj::::res://sprites/mercurio-grey.jpg<>uid://bbgue5em8xg2v::::res://sprites/25tmag-blue-slide-6I28-mediumSquareAt3X.jpg<>uid://dbj54ftrkvigs::::res://scripts/hurt_box.gd
 ::res://scenes/enemigos/::1787318455
-::res://scenes/enemigos/pruebas/::1787318455
+::res://scenes/enemigos/pruebas/::1787748595
 policia_basico.tscn::PackedScene::4458554743570580209::1782724806::0::1::::<><><>0<>0<><>::uid://b33pf41vqagdh::::res://scripts/policia_basico.gd
+hit_box.tscn::PackedScene::2606230291217378171::1787749467::0::1::::<><><>0<>0<><>::uid://g21uq3jpy3e8::::res://scripts/hit_box_demo.gd
 ::res://scenes/mundos/::1787318455
 bobbing_platform.tscn::PackedScene::1221370280058621781::1787264940::0::1::::<><><>0<>0<><>::
 ciudad_demo.tscn::PackedScene::2523802709037554077::1787264954::0::1::::<><><>0<>0<><>::uid://bci6ml1jqa1nt::::res://scripts/working_circuit_example.gd<>uid://bvidigsujdo8::::res://Modelos/ciudad/Full/ciudad_demo_Image.png<>uid://1nho082jixm::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn<>uid://ddqwlp3juq6rj::::res://Modelos/ciudad/Full/ciudad_demo_colormap.png<>uid://qflgs6efm5p7::::res://Modelos/ciudad/Full/ciudad_demo_Image_35.jpg<>uid://h5x6tf51p1yc::::res://Modelos/ciudad/Full/ciudad_demo_Image_36.jpg<>uid://bvbm2odabshy5::::res://Modelos/ciudad/Full/ciudad_demo_Image_17.png<>uid://cilnhpfebm3pd::::res://Modelos/ciudad/Full/ciudad_demo_Image_33.jpg<>uid://b7w8dj7ujioe::::res://Modelos/ciudad/Full/ciudad_demo_Image_34.jpg<>uid://dn4vp26prrn4l::::res://Modelos/ciudad/Full/ciudad_demo_Image_37.png<>uid://c1lhsaqyxihqx::::res://Modelos/ciudad/Full/ciudad_demo_Image_38.jpg<>uid://0m0dno6xa6ys::::res://Modelos/ciudad/Full/ciudad_demo_Image_0.jpg<>uid://ckktye0k31vvy::::res://Modelos/ciudad/Full/ciudad_demo_Image_1.png<>uid://cg5qaoirfda5i::::res://Modelos/ciudad/Full/ciudad_demo_Image_2.jpg<>uid://388xgsh0v67r::::res://Modelos/ciudad/Full/ciudad_demo_Image_39.png<>uid://ba6ioi125xhdf::::res://Modelos/ciudad/Full/ciudad_demo_Image_40.jpg<>uid://def5n8din2qur::::res://Modelos/ciudad/Full/ciudad_demo_Image_41.png<>uid://md4avxhytmrk::::res://Modelos/ciudad/Full/ciudad_demo_Image_44.png<>uid://d0847gujj8563::::res://Modelos/ciudad/Full/ciudad_demo_Image_45.jpg<>uid://c3crj5y36blms::::res://Modelos/ciudad/Full/ciudad_demo_Image_46.jpg<>uid://b5lngwaqal8ea::::res://Modelos/ciudad/Full/ciudad_demo_Image_47.png<>uid://chhk2s8lxybcu::::res://Modelos/ciudad/Full/ciudad_demo_Image_48.jpg<>uid://dk5vvrgrj5udr::::res://Modelos/ciudad/Full/ciudad_demo_Image_49.jpg<>uid://dwjhcl23ftu0o::::res://Modelos/ciudad/Full/ciudad_demo_Image_50.jpg<>uid://cy7aj7kudculv::::res://Modelos/ciudad/Full/ciudad_demo_Image_51.jpg<>uid://ssnk50ni2dfo::::res://Modelos/ciudad/Full/ciudad_demo_Image_53.jpg<>uid://grftwb67btse::::res://Modelos/ciudad/Full/ciudad_demo_Image_54.png<>uid://c66x66n6qv7py::::res://Modelos/ciudad/Full/ciudad_demo_Image_55.jpg<>uid://bsrj2mgjsgvan::::res://Modelos/ciudad/Full/ciudad_demo_Image_56.jpg<>uid://cplug8pxueekk::::res://Modelos/ciudad/Full/ciudad_demo_Image_60.jpg<>uid://cbudmaur60hh1::::res://Modelos/ciudad/Full/ciudad_demo_Image_65.jpg<>uid://gv03s0gjc6x0::::res://Modelos/ciudad/Full/ciudad_demo_Image_66.png<>uid://dmykangegxj48::::res://Modelos/ciudad/Full/ciudad_demo_Image_10.jpg<>uid://c4y6acn0exy10::::res://Modelos/ciudad/Full/ciudad_demo_Image_11.png<>uid://c5gdelim2qdhi::::res://Modelos/ciudad/Full/ciudad_demo_Image_12.jpg<>uid://b54gog8klhnot::::res://Modelos/ciudad/Full/ciudad_demo_Image_61.jpg<>uid://dxk3bdfy2gbrk::::res://Modelos/ciudad/Full/ciudad_demo_Image_62.png<>uid://b58nge7rrtu7b::::res://Modelos/ciudad/Full/ciudad_demo_Image_63.jpg
 main.tscn::PackedScene::7707817494412191143::1787264940::0::1::::<><><>0<>0<><>::uid://by51okrujup50::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_2.tscn<>uid://rnv14k3qw5fd::::res://scenes/mundos/bobbing_platform.tscn
 working_circuit_example.tscn::PackedScene::3539784809125090437::1787264940::0::1::::<><><>0<>0<><>::uid://bci6ml1jqa1nt::::res://scripts/working_circuit_example.gd<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr<>uid://b2ovrodo85qx7::::res://Modelos/ciudad/Models/OBJ format/construction-barrier.obj<>uid://eipbjvjfwmp5::::res://Modelos/ciudad/Models/OBJ format/road-curve.obj<>uid://dwqynxoxg5jwo::::res://Modelos/ciudad/Models/OBJ format/road-straight.obj<>uid://1nho082jixm::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn
 working_road_example.tscn::PackedScene::7908440601930268685::1787264940::0::1::::<><><>0<>0<><>::uid://b1oa3l5tgohqe::::res://Modelos/ciudad/Models/OBJ format/road-driveway-single.obj<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr<>uid://by51okrujup50::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_2.tscn
-::res://scripts/::1787318454
+::res://scripts/::1787748595
 camera_springarm_avanzado1.gd::GDScript::4485286633524042925::1787264934::0::1::::<>SpringArm3D<><>0<>0<><>::
+global.gd::GDScript::7651462347242102202::1787658923::0::1::::<>Node<><>0<>0<><>::
 guardar_puntaje.gd::GDScript::1672930339991366611::1787264934::0::1::::<>Node<><>0<>0<><>::
+hurt_box.gd::GDScript::7249903885064744486::1787659645::0::1::::HurtBox<>Area3D<><>0<>0<><>::
 policia_basico.gd::GDScript::4410432130850304293::1787264934::0::1::::<>CharacterBody3D<><>0<>0<><>::
 prueba_auto_avanzado_controles.gd::GDScript::8577426847858057097::1787264934::0::1::::<>VehicleBody3D<><>0<>0<><>::
+hit_box_demo.gd::GDScript::478486502935899881::1787749467::0::1::::HitBox<>Area3D<><>0<>0<><>::
 working_circuit_example.gd::GDScript::2545217667656360277::1787264934::0::1::::<>Node3D<><>0<>0<><>::
-::res://scripts/control/::1787318829
+::res://scripts/control/::1787748311
 control_auto_prueba1.gd::GDScript::1197587218301049383::1787264942::0::1::::<>VehicleBody3D<><>0<>0<><>::
 control_avanzado_alfa1.gd::GDScript::212952028476085704::1787264942::0::1::::<>VehicleBody3D<><>0<>0<><>::
 control_basico.gd::GDScript::3618994475376513377::1787264942::0::1::::<>Control<><>0<>0<><>::
-prueba_auto_avanzado_3.gd::GDScript::7556936316750540474::1787318829::0::1::::<>VehicleBody3D<><>0<>0<><>::
+prueba_auto_avanzado_3.gd::GDScript::7556936316750540474::1787748311::0::1::::<>VehicleBody3D<><>0<>0<><>::
 ::res://sprites/::1787318454
 25tmag-blue-slide-6I28-mediumSquareAt3X.jpg::CompressedTexture2D::2470218859356398987::1787264934::1787264934::1::::<><><>0<>0<>00b6e97ad1507597afe86b4427fdfe6f<>res://.godot/imported/25tmag-blue-slide-6I28-mediumSquareAt3X.jpg-c1f9e6782a70db83eb270c86fdfec4d2.ctex::
 mercurio-grey.jpg::CompressedTexture2D::963066770037065801::1787264934::1787264934::1::::<><><>0<>0<>d1efdc226f8bf756b0e22e5650359fe7<>res://.godot/imported/mercurio-grey.jpg-add311fc40248771a8376dd2462407ee.ctex::
