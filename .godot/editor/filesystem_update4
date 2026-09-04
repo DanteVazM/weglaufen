@@ -1,2 +1,2 @@
-res://mapa.tscn
-res://enemy.gd
+res://scenes/puntuaciones.tscn
+res://scenes/puntuaciones.gd
