@@ -9,36 +9,56 @@ extends VehicleBody3D
 @export var wheel_traction_left: VehicleWheel3D
 @export var wheel_traction_right: VehicleWheel3D
 
-var max_hp = 50
+var hp: int = 30
+var max_hp = 100
+var invulnerable: bool = false
+var dead: bool = false
 
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	HPbar.max_value = max_hp
-
-func update_HUD():
-	HPbar.value = global.hp
+	contact_monitor = true
+	max_contacts_reported = 5
+	body_entered.connect(_on_body_entered)
 	
+func _on_body_entered(body: Node) -> void:
+	if dead or invulnerable:
+		return
+	if body.is_in_group("obstaculo"):
+		take_damage(10)
+		if dead:
+			return
+		invulnerable = true
+		await get_tree().create_timer(0.5).timeout
+		invulnerable = false
+		
+		
+func update_HUD():
+	HPbar.value = hp
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+func take_damage(amount: int) -> void:
+	hp -= amount
+	print("HP:", hp)
+	if hp <= 0:
+		die()
+
+func die() -> void:
+	dead = true
+	print("Car destroyed!")
+	get_tree().change_scene_to_file("res://scenes/2d/game_over.tscn")
+	
 func _physics_process(delta: float) -> void:
 	update_HUD()
-	
+
 	var dirrection = Input.get_action_strength("Acelerador") - Input.get_action_strength("Freno")
 	var steering_direction = Input.get_action_strength("Izqda") - Input.get_action_strength("Der")
-	
+
 	var RPM_left = wheel_traction_left.get_rpm()
 	var RPM_right = wheel_traction_right.get_rpm()
 	var RPM = (RPM_left + RPM_right) / 2.0
-	
-	
-	engine_force = dirrection * torque * (1.0 - RPM/max_RPM)
+
+	engine_force = dirrection * torque * (1.0 - RPM / max_RPM)
 	steering = lerp(steering, steering_direction * turn_amount, turn_speed * delta)
 
 	if dirrection == 0:
-		brake = 3
-
-
-func _on_hurt_box_hurted() -> void:
-	print("HURT")
+		brake = 2
+	else:
+		brake = 0

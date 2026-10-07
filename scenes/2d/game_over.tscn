@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cbadcgfglvoao"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jdtgr"]
+
+[node name="GameOver" type="Control" unique_id=1458739409]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Label" type="Label" parent="." unique_id=370856101]
+layout_mode = 0
+offset_right = 1160.0
+offset_bottom = 643.0
+theme_override_font_sizes/font_size = 55
+text = "TE PILLARON!"
+label_settings = SubResource("LabelSettings_jdtgr")
+horizontal_alignment = 1
+vertical_alignment = 1

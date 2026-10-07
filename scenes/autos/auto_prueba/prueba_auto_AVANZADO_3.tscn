@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://dfwvvwo2c7itu" path="res://scripts/control/prueba_auto_avanzado_3.gd" id="1_ki4n8"]
 [ext_resource type="Texture2D" uid="uid://nyrtl031ciyj" path="res://sprites/mercurio-grey.jpg" id="2_ajgh6"]
 [ext_resource type="Texture2D" uid="uid://bbgue5em8xg2v" path="res://sprites/25tmag-blue-slide-6I28-mediumSquareAt3X.jpg" id="3_fsvkf"]
-[ext_resource type="Script" uid="uid://dbj54ftrkvigs" path="res://scripts/hurt_box.gd" id="4_fsvkf"]
+[ext_resource type="PackedScene" uid="uid://na0ajvfhtecj" path="res://scenes/enemigos/pruebas/hurt_box.tscn" id="4_fsvkf"]
+[ext_resource type="Script" uid="uid://bevh8j8kpaj2a" path="res://scripts/camera_follow.gd" id="5_spib0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_guyxo"]
 resource_name = "chasis"
@@ -480,21 +481,18 @@ shadow_mesh = SubResource("ArrayMesh_evdxr")
 [sub_resource type="BoxShape3D" id="BoxShape3D_ki4n8"]
 size = Vector3(2.5384674, 1.4354858, 5.952881)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_spib0"]
+
 [node name="Nissan GTR" type="VehicleBody3D" unique_id=1057592833 node_paths=PackedStringArray("wheel_traction_left", "wheel_traction_right")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3437617, 0)
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -0.3, 0)
+steering = 0.017453292
 script = ExtResource("1_ki4n8")
 torque = 2500
 max_RPM = 900
 wheel_traction_left = NodePath("FrontLeft")
 wheel_traction_right = NodePath("FrontRight")
-
-[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1435468480]
-transform = Transform3D(-1, -8.742278e-08, -3.821371e-15, 0, -4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, 0, 11.177963, 1.6473322)
-collision_mask = 0
-
-[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=916949466]
 
 [node name="Nissan GTR" type="Node3D" parent="." unique_id=1113494185]
 
@@ -503,6 +501,7 @@ mesh = SubResource("ArrayMesh_spib0")
 
 [node name="FrontLeft" type="VehicleWheel3D" parent="." unique_id=1073288586]
 transform = Transform3D(1, 0, 0, 0, 0.8546951, 0, 0, 0, 0.9337866, 1.1416732, -0.3574772, 1.9299489)
+steering = 0.017453292
 use_as_traction = true
 use_as_steering = true
 wheel_radius = 0.52
@@ -516,6 +515,7 @@ mesh = SubResource("ArrayMesh_fsvkf")
 
 [node name="FrontRight" type="VehicleWheel3D" parent="." unique_id=1477807684]
 transform = Transform3D(1, 0, 0, 0, 0.8546951, 0, 0, 0, 0.9337866, -1.017, -0.357, 1.93)
+steering = 0.017453292
 use_as_traction = true
 use_as_steering = true
 wheel_radius = 0.52
@@ -563,11 +563,16 @@ offset_bottom = 2401.0
 texture_under = ExtResource("2_ajgh6")
 texture_progress = ExtResource("3_fsvkf")
 
-[node name="HurtBox" type="Area3D" parent="." unique_id=404722720]
-script = ExtResource("4_fsvkf")
+[node name="HurtBox" parent="." unique_id=1851784449 instance=ExtResource("4_fsvkf")]
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="HurtBox" unique_id=378678585]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019187927, 0.31484985, 0.122680664)
-shape = SubResource("BoxShape3D_ki4n8")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HurtBox" unique_id=1475312869]
+shape = SubResource("BoxShape3D_spib0")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1492858824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.333066, 0.3840356)
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=1513777063]
+transform = Transform3D(-1, 0, -8.742278e-08, -8.742278e-08, -4.371139e-08, 1, -3.821371e-15, 1, 4.371139e-08, 0, 0.8294287, 2.752469)
+script = ExtResource("5_spib0")
 
 [connection signal="hurted" from="HurtBox" to="." method="_on_hurt_box_hurted"]

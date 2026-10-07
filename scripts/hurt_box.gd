@@ -1,5 +1,4 @@
 extends Area3D
-
 class_name HurtBox
 
 signal hurted()
@@ -11,5 +10,7 @@ func get_damage(value: int):
 	hurted.emit()
 	
 	if global.hp <= 0:
-		died.emit
-	
+		died.emit()
+
+func _process(delta: float) -> void:
+	pass
