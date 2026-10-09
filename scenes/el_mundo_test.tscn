@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dkw54jvulqilh"]
+
+[ext_resource type="PackedScene" uid="uid://docltc1jwxlf2" path="res://prueba_auto_AVANZADO_1.tscn" id="2_1o6h4"]
+[ext_resource type="ArrayMesh" uid="uid://c2ajiuub5bbsw" path="res://Modelos/ciudad/Models/OBJ format/road-side.obj" id="3_52occ"]
+[ext_resource type="Texture2D" uid="uid://cyx7cnkhkewdh" path="res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr" id="3_lmcvy"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_52occ"]
+panorama = ExtResource("3_lmcvy")
+
+[sub_resource type="Sky" id="Sky_17t8l"]
+sky_material = SubResource("PanoramaSkyMaterial_52occ")
+
+[sub_resource type="Environment" id="Environment_kla8x"]
+background_mode = 2
+sky = SubResource("Sky_17t8l")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_34cpg"]
+size = Vector3(5.155655, 0.001, 0.94873047)
+
+[node name="el_mundo" type="Node3D" unique_id=1818928090]
+transform = Transform3D(0.9996517, -0.012425566, 0.023284584, 0.013013031, 0.9995965, -0.02525032, -0.022961438, 0.025544528, 0.99941, 0, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=962126440]
+transform = Transform3D(1, 0, 0, 0, -0.12301254, 0.9924051, 0, -0.9924051, -0.12301254, 0, 47.880245, 0)
+
+[node name="Nissan GTR" parent="." unique_id=1057592833 instance=ExtResource("2_1o6h4")]
+transform = Transform3D(0.9996517, 0.0136344945, -0.022961471, -0.01242557, 1.0473338, 0.025544528, 0.023284584, -0.026456222, 0.99941, 0.21687771, 1.3493096, -0.46186396)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1476297555]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1970737018]
+environment = SubResource("Environment_kla8x")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=50269596]
+transform = Transform3D(8.20231, 1.3387762e-09, -8.940697e-08, -1.5366822e-08, 1.0332744, 5.9604645e-08, 2.9802322e-08, 1.8626451e-09, 4.807929, -0.65713876, 0.005405669, -0.12466692)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2075488061]
+transform = Transform3D(1.5000023, 3.7501253e-05, -1.7601997e-06, -3.8801692e-05, 1.5000017, 2.1457672e-06, 1.6652048e-06, -1.0244548e-08, 1.5000278, -0.06931669, 0.18433303, -0.1453298)
+shape = SubResource("BoxShape3D_34cpg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1790468073]
+transform = Transform3D(7.654835, 3.274181e-10, -2.7939677e-09, -5.9604645e-08, 0.95582896, 2.9802322e-08, 2.9802322e-08, 0, 1.0853223, -0.016001314, 0.001578859, -0.00063584745)
+mesh = ExtResource("3_52occ")
