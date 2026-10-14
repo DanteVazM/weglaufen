@@ -9,10 +9,15 @@ extends VehicleBody3D
 @export var wheel_traction_left: VehicleWheel3D
 @export var wheel_traction_right: VehicleWheel3D
 
+
+
 var hp: int = 30
 var max_hp = 100
 var invulnerable: bool = false
 var dead: bool = false
+
+signal died
+signal hp_changed(new_hp)
 
 func _ready() -> void:
 	contact_monitor = true
@@ -37,12 +42,14 @@ func update_HUD():
 func take_damage(amount: int) -> void:
 	hp -= amount
 	print("HP:", hp)
+	hp_changed.emit(hp)
 	if hp <= 0:
 		die()
 
 func die() -> void:
 	dead = true
 	print("Car destroyed!")
+	died.emit()
 	get_tree().change_scene_to_file("res://scenes/2d/game_over.tscn")
 	
 func _physics_process(delta: float) -> void:

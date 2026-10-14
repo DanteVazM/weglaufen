@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bci6ml1jqa1nt" path="res://scripts/working_circuit_example.gd" id="1_2xhkk"]
 [ext_resource type="Texture2D" uid="uid://bvidigsujdo8" path="res://Modelos/ciudad/Full/ciudad_demo_Image.png" id="2_kgjtc"]
+[ext_resource type="FontFile" uid="uid://conhfkbd5pb1b" path="res://fonts/CFLCD-Regular.ttf" id="2_kvava"]
 [ext_resource type="PackedScene" uid="uid://1nho082jixm" path="res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn" id="2_uxyiy"]
+[ext_resource type="FontFile" uid="uid://b5ipuix5vmvdk" path="res://fonts/digital-7.ttf" id="3_50k2h"]
 [ext_resource type="Texture2D" uid="uid://ddqwlp3juq6rj" path="res://Modelos/ciudad/Full/ciudad_demo_colormap.png" id="3_krm0w"]
 [ext_resource type="Texture2D" uid="uid://qflgs6efm5p7" path="res://Modelos/ciudad/Full/ciudad_demo_Image_35.jpg" id="4_kvava"]
 [ext_resource type="Texture2D" uid="uid://h5x6tf51p1yc" path="res://Modelos/ciudad/Full/ciudad_demo_Image_36.jpg" id="5_50k2h"]
@@ -38,6 +40,18 @@
 [ext_resource type="Texture2D" uid="uid://b54gog8klhnot" path="res://Modelos/ciudad/Full/ciudad_demo_Image_61.jpg" id="35_x645x"]
 [ext_resource type="Texture2D" uid="uid://dxk3bdfy2gbrk" path="res://Modelos/ciudad/Full/ciudad_demo_Image_62.png" id="36_82bnh"]
 [ext_resource type="Texture2D" uid="uid://b58nge7rrtu7b" path="res://Modelos/ciudad/Full/ciudad_demo_Image_63.jpg" id="37_q08cx"]
+
+[sub_resource type="FontVariation" id="FontVariation_50k2h"]
+base_font = ExtResource("2_kvava")
+
+[sub_resource type="FontVariation" id="FontVariation_mixj0"]
+base_font = ExtResource("3_50k2h")
+
+[sub_resource type="FontVariation" id="FontVariation_tjxre"]
+base_font = ExtResource("3_50k2h")
+
+[sub_resource type="FontVariation" id="FontVariation_4v565"]
+base_font = SubResource("FontVariation_tjxre")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7c7v"]
 resource_name = "Material"
@@ -4425,32 +4439,52 @@ transform = Transform3D(1, 0, 0, 0, -0.12301254, 0.9924051, 0, -0.9924051, -0.12
 process_callback = 0
 
 [node name="TimerLabel" type="Label" parent="." unique_id=654964295]
-visible = false
-offset_left = 66.0
+offset_left = 69.0
 offset_top = 47.0
-offset_right = 106.0
+offset_right = 109.0
 offset_bottom = 70.0
+theme_override_fonts/font = SubResource("FontVariation_50k2h")
+theme_override_font_sizes/font_size = 16
 
 [node name="Tiempo_Str" type="Label" parent="." unique_id=1766533847]
-visible = false
 offset_top = 47.0
 offset_right = 64.0
 offset_bottom = 70.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Tiempo:"
 
 [node name="Puntaje_Str" type="Label" parent="." unique_id=333188082]
-visible = false
-offset_top = 65.0
-offset_right = 64.0
-offset_bottom = 88.0
-text = "Puntaje:"
+offset_left = 383.0
+offset_top = 507.0
+offset_right = 447.0
+offset_bottom = 530.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_mixj0")
+text = "Puntaje"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="PuntajeLabel" type="Label" parent="." unique_id=813397944]
-visible = false
-offset_left = 64.0
-offset_top = 66.0
-offset_right = 104.0
-offset_bottom = 89.0
+offset_left = 319.0
+offset_top = 491.0
+offset_right = 510.0
+offset_bottom = 612.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_4v565")
+theme_override_font_sizes/font_size = 58
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VidaLabel" type="Label" parent="." unique_id=915974005]
+offset_left = 146.0
+offset_top = 491.0
+offset_right = 337.0
+offset_bottom = 612.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_4v565")
+theme_override_font_sizes/font_size = 58
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ciudad_demo" type="Node3D" parent="." unique_id=2110760424]
 
@@ -5027,7 +5061,7 @@ collision_mask = 3
 torque = 2000
 max_RPM = 600
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=2017021201 groups=["obstaculo"]]
+[node name="CharacterBody3D" type="VehicleBody3D" parent="." unique_id=702272519 groups=["obstaculo"]]
 transform = Transform3D(5.38145, 3.7252903e-09, -2.9802322e-08, -1.4202669e-08, 0.9785666, 0, 2.2351742e-08, 1.8626451e-09, 2.7292576, -20.657137, 1.0598671, -38.35283)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=759824624]
