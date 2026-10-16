@@ -1,36 +1,37 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1791550875
+::res://::1792154015
 control.gd::GDScript::3618994475376513377::1785936152::0::1::::<>Control<><>0<>0<><>::
-enemy.gd::GDScript::2033356267157188179::1787751419::0::1::::<>CharacterBody3D<><>0<>0<><>::
+el_mundo_test.tscn::PackedScene::7908440601930268685::1780058406::0::1::::<><><>0<>0<><>::uid://docltc1jwxlf2::::res://prueba_auto_AVANZADO_1.tscn<>uid://bdixhqa6je6gb::::res://Modelos/ciudad/Models/GLB format/road-bend.glb
+enemy.gd::GDScript::2033356267157188179::1791982958::0::1::::<>CharacterBody3D<><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1786450087::0::1::::<><><>0<>0<><>::
-GUIA.md::TextFile::-1::1781268023::0::1::::<><><>0<>0<><>::
+GUIA.md::TextFile::-1::1780058405::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1980151826230133846::1781268002::1781268337::1::::<><><>0<>0<>cecaca39f4779def21d8a05ad0c74534<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 lebomboclad.txt::TextFile::-1::1781268377::0::1::::<><><>0<>0<><>::
-mapa.tscn::PackedScene::1635584469933461818::1786714638::0::1::::<><><>0<>0<><>::uid://mpv4ldegymky::::res://player.gd<>uid://378c0hufmqt4::::res://enemy.gd
-player.gd::GDScript::874559217420605052::1786108056::0::1::::<>CharacterBody3D<><>0<>0<><>::
+mapa.tscn::PackedScene::1635584469933461818::1791982894::0::1::::<><><>0<>0<><>::uid://mpv4ldegymky::::res://player.gd<>uid://378c0hufmqt4::::res://enemy.gd
+player.gd::GDScript::874559217420605052::1791891520::0::1::::<>CharacterBody3D<><>0<>0<><>::
 prueba_auto1.tscn::PackedScene::5260518509311060895::1781268002::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
 prueba_auto2.tscn::PackedScene::4745107150932541570::1781268002::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
-prueba_auto3.tscn::PackedScene::497008739406361102::1781268002::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
-prueba_auto4.tscn::PackedScene::7409943762860330318::1781268002::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
-prueba_auto_AVANZADO_1.tscn::PackedScene::8146736580175350441::1781268023::0::1::::<><><>0<>0<><>::uid://dbfj2336jcpk::::res://scripts/suspension.gd<>uid://b45yar8adh2xl::::res://scripts/camera_springarm_avanzado1.gd
-road-curve-intersection-barrier.glb::PackedScene::5470066388398599921::1781268002::1781268341::1::::<><><>0<>0<>77f85338db9422aa19ff5a9270640e24<>res://.godot/imported/road-curve-intersection-barrier.glb-3ab61860af3856c851044ee84560bfbd.scn::
-::res://fonts/::1782738867
+prueba_auto3.tscn::PackedScene::497008739406361102::1780058406::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
+prueba_auto4.tscn::PackedScene::7409943762860330318::1780058406::0::1::::<><><>0<>0<><>::uid://rcec7aode656::::res://scripts/control_auto_prueba1.gd
+prueba_auto_AVANZADO_1.tscn::PackedScene::8146736580175350441::1780058406::0::1::::<><><>0<>0<><>::uid://dbfj2336jcpk::::res://scripts/suspension.gd<>uid://b45yar8adh2xl::::res://scripts/camera_springarm_avanzado1.gd
+road-curve-intersection-barrier.glb::PackedScene::5470066388398599921::1780058406::1781268341::1::::<><><>0<>0<>77f85338db9422aa19ff5a9270640e24<>res://.godot/imported/road-curve-intersection-barrier.glb-3ab61860af3856c851044ee84560bfbd.scn::
+::res://fonts/::1791552145
 Designer.otf::FontFile::7817242755774672118::1782738867::1782738867::1::::<><><>0<>0<>f461d9bec3520b30f5eb433ee29cb67c<>res://.godot/imported/Designer.otf-20eba5e9a89ee0e925785bdc44f9f7ef.fontdata::
-::res://imagenes/::1783083517
+::res://imagenes/::1791552145
 auto 2.webp::CompressedTexture2D::2221740878322430548::1781268023::1781268337::1::::<><><>0<>0<>5c06c71faef81136b43e56f2903a6aac<>res://.godot/imported/auto 2.webp-e14e24f99e4d9ecdf155598dbbe24215.ctex::
 negro.jpg::CompressedTexture2D::6806811665114710684::1783083516::1783083517::1::::<><><>0<>0<>71b7a9fd2f9e67d6c2077e8e76a54d42<>res://.godot/imported/negro.jpg-c638a56ad77d494d7acdb0117e5c0001.ctex::
-::res://imagenes/EXRs/::1781268338
+::res://imagenes/EXRs/::1791552146
 citrus_orchard_road_puresky_4k.exr::CompressedTexture2D::6506801516981880933::1781268023::1781268338::1::::<><><>0<>0<>0de02c571c31ecf3963a6dd3ba9b3c37<>res://.godot/imported/citrus_orchard_road_puresky_4k.exr-7c0ceb231950b08beab3d9ee1fee6f6c.bptc.ctex::
-::res://Modelos/::1781268002
-::res://Modelos/Auto/::1781268347
+::res://Modelos/::1791552146
+::res://Modelos/Auto/::1791552146
 Nissan GTR.glb::PackedScene::7008071739971783641::1781268002::1781268347::1::::<><><>0<>0<>0d4cb8263cb54145f87583bb171d8a1b<>res://.godot/imported/Nissan GTR.glb-604b67d292e3850e203c45f88bcb9a80.scn::
-::res://Modelos/ciudad/::1781268337
+::res://Modelos/ciudad/::1791552146
 License.txt::TextFile::-1::1781268002::0::1::::<><><>0<>0<><>::
 Preview (Variation A).png::CompressedTexture2D::4857373310714311005::1781268002::1781268337::1::::<><><>0<>0<>62793a702cde37eba5150ba9e4cf037f<>res://.godot/imported/Preview (Variation A).png-fe515945f0af862d157ca869e0c99dac.ctex::
 Preview.png::CompressedTexture2D::9202619223046896519::1781268002::1781268336::1::::<><><>0<>0<>bc3ccd80345cc4fdbfa1969a1d89bfa3<>res://.godot/imported/Preview.png-cdacd7903c1287382e879a2d524cc178.ctex::
 Sample.png::CompressedTexture2D::8447534081899291241::1781268002::1781268337::1::::<><><>0<>0<>6f9b1ce6e65295de42f89efd5d45b9c9<>res://.godot/imported/Sample.png-8b6bb7de91b81b0338fd6a3003352c25.ctex::
-::res://Modelos/ciudad/Models/::1781268002
-::res://Modelos/ciudad/Models/FBX format/::1781268353
+::res://Modelos/ciudad/Models/::1791552146
+::res://Modelos/ciudad/Models/FBX format/::1791552146
 bridge-pillar-wide.fbx::PackedScene::7296450566874690677::1781268002::1781268347::1::::<><><>0<>0<>79a4bc98b691e853ff3cde8d0b8155da<>res://.godot/imported/bridge-pillar-wide.fbx-4d507af480629c2be4738bbcd3ed0716.scn::uid://dy0mk52t343kq::::res://Modelos/ciudad/Models/FBX format/Textures/colormap.png
 bridge-pillar.fbx::PackedScene::6404866257706885350::1781268002::1781268347::1::::<><><>0<>0<>52b2ae0349b4d14a7b605f4b570252af<>res://.godot/imported/bridge-pillar.fbx-f8ee28a90ec5604673470484a7af8bfb.scn::uid://dy0mk52t343kq::::res://Modelos/ciudad/Models/FBX format/Textures/colormap.png
 construction-barrier.fbx::PackedScene::8575565265073282083::1781268002::1781268346::1::::<><><>0<>0<>63b4dab7c9a19049e303aa8489437dd4<>res://.godot/imported/construction-barrier.fbx-48462c46f8b43ccb8a4b6a4c7913113a.scn::uid://dy0mk52t343kq::::res://Modelos/ciudad/Models/FBX format/Textures/colormap.png
@@ -103,9 +104,9 @@ tile-high.fbx::PackedScene::3105189062374941295::1781268002::1781268344::1::::<>
 tile-low.fbx::PackedScene::103325683572176022::1781268002::1781268344::1::::<><><>0<>0<>b086bfed5dc8858493b69419bd6001ed<>res://.godot/imported/tile-low.fbx-7099f75919464ba66fbcb6862b4703db.scn::uid://dy0mk52t343kq::::res://Modelos/ciudad/Models/FBX format/Textures/colormap.png
 tile-slant.fbx::PackedScene::6571934568982403876::1781268002::1781268344::1::::<><><>0<>0<>c3917554236cb8d4aac9492702232c0a<>res://.godot/imported/tile-slant.fbx-e97c60d2cacd2779a745b61e88f7c1a7.scn::uid://dy0mk52t343kq::::res://Modelos/ciudad/Models/FBX format/Textures/colormap.png
 tile-slantHigh.fbx::PackedScene::8852320247958937151::1781268002::1781268353::1::::<><><>0<>0<>5280102fa3d2cefea1a32c49ce03b1a5<>res://.godot/imported/tile-slantHigh.fbx-ddbce5072a635decb087b951694821e9.scn::uid://dy0mk52t343kq::::res://Modelos/ciudad/Models/FBX format/Textures/colormap.png
-::res://Modelos/ciudad/Models/FBX format/Textures/::1781268355
+::res://Modelos/ciudad/Models/FBX format/Textures/::1791552146
 colormap.png::CompressedTexture2D::8896151822407907868::1781268002::1781268355::1::::<><><>0<>0<>4a304e77e9c862f645861ba985fe1f91<>res://.godot/imported/colormap.png-bce22173ed3a790ebaa0ca668c4f8740.s3tc.ctex::
-::res://Modelos/ciudad/Models/GLB format/::1781268355
+::res://Modelos/ciudad/Models/GLB format/::1791552146
 bridge-pillar-wide.glb::PackedScene::589024995331174890::1781268002::1781268353::1::::<><><>0<>0<>2bb483cf1dd5d83c932dadc0831a593d<>res://.godot/imported/bridge-pillar-wide.glb-501184392f0f525660b12d5563e9fa13.scn::uid://cg0b72d85ck61::::res://Modelos/ciudad/Models/GLB format/Textures/colormap.png
 bridge-pillar.glb::PackedScene::1166086216249279948::1781268002::1781268353::1::::<><><>0<>0<>79946c94561f259b0453a64d3b82440a<>res://.godot/imported/bridge-pillar.glb-9af338f9cfa83cc0daa40d744dd6a987.scn::uid://cg0b72d85ck61::::res://Modelos/ciudad/Models/GLB format/Textures/colormap.png
 construction-barrier.glb::PackedScene::7205606878753075366::1781268002::1781268353::1::::<><><>0<>0<>9cd1df90ea61a3f8e1c0e373c7c8bf9c<>res://.godot/imported/construction-barrier.glb-19b822e8d19c33303d278f38a6ce633d.scn::uid://cg0b72d85ck61::::res://Modelos/ciudad/Models/GLB format/Textures/colormap.png
@@ -178,9 +179,9 @@ tile-high.glb::PackedScene::5062563267017586722::1781268002::1781268351::1::::<>
 tile-low.glb::PackedScene::246422817816224711::1781268002::1781268350::1::::<><><>0<>0<>6fcb593ddbc649d79634805638a4165f<>res://.godot/imported/tile-low.glb-1d4be7509e4e9e6589f36af69bdefdf8.scn::uid://cg0b72d85ck61::::res://Modelos/ciudad/Models/GLB format/Textures/colormap.png
 tile-slant.glb::PackedScene::8632220625016972260::1781268002::1781268350::1::::<><><>0<>0<>da253e8776b37f40fff143f98eb104e1<>res://.godot/imported/tile-slant.glb-55afcf729973e9bdbcb880460ce6840e.scn::uid://cg0b72d85ck61::::res://Modelos/ciudad/Models/GLB format/Textures/colormap.png
 tile-slantHigh.glb::PackedScene::4759918285698411107::1781268002::1781268350::1::::<><><>0<>0<>2b9570e60f6ae7a75d09b7f79e47562e<>res://.godot/imported/tile-slantHigh.glb-e6d73e25315a3b6588b3c319c1b8e801.scn::uid://cg0b72d85ck61::::res://Modelos/ciudad/Models/GLB format/Textures/colormap.png
-::res://Modelos/ciudad/Models/GLB format/Textures/::1781268355
+::res://Modelos/ciudad/Models/GLB format/Textures/::1791552146
 colormap.png::CompressedTexture2D::5245703159768031408::1781268002::1781268355::1::::<><><>0<>0<>c7dfec72589693b8250092f84375f387<>res://.godot/imported/colormap.png-d165a75ef5df40183594cc6d2fa6a6c1.s3tc.ctex::
-::res://Modelos/ciudad/Models/OBJ format/::1781268341
+::res://Modelos/ciudad/Models/OBJ format/::1791552146
 bridge-pillar-wide.obj::Mesh::7023143726917656671::1781268002::1781268341::1::::<><><>0<>0<>88ac546ee2755e74276ec4049e28c4f9<>res://.godot/imported/bridge-pillar-wide.obj-0bc7b41ccde18e9dc38001a47f54d0e1.mesh<*>res://.godot/imported/bridge-pillar-wide.obj-0bc7b41ccde18e9dc38001a47f54d0e1.mesh::uid://d4idbd24i2bek::::res://Modelos/ciudad/Models/OBJ format/Textures/colormap.png
 bridge-pillar.obj::Mesh::9188456166482331391::1781268002::1781268341::1::::<><><>0<>0<>8b6095a16eac4e6f8fba20096cb8f230<>res://.godot/imported/bridge-pillar.obj-14883702a049429d58e910b706e2b354.mesh<*>res://.godot/imported/bridge-pillar.obj-14883702a049429d58e910b706e2b354.mesh::uid://d4idbd24i2bek::::res://Modelos/ciudad/Models/OBJ format/Textures/colormap.png
 construction-barrier.obj::Mesh::4311726906463999982::1781268002::1781268341::1::::<><><>0<>0<>c054fcd0d037cbe44431e5d7b94025a0<>res://.godot/imported/construction-barrier.obj-ec570c57be84e3bc74a0fa76474c8ea6.mesh<*>res://.godot/imported/construction-barrier.obj-ec570c57be84e3bc74a0fa76474c8ea6.mesh::uid://d4idbd24i2bek::::res://Modelos/ciudad/Models/OBJ format/Textures/colormap.png
@@ -253,11 +254,11 @@ tile-high.obj::Mesh::381535212588691939::1781268002::1781268340::1::::<><><>0<>0
 tile-low.obj::Mesh::7818142024280077718::1781268002::1781268340::1::::<><><>0<>0<>9368c351defadd01f4c5601b9ff36fc7<>res://.godot/imported/tile-low.obj-55a45b4d6b5e6a7137f923a94de5604f.mesh<*>res://.godot/imported/tile-low.obj-55a45b4d6b5e6a7137f923a94de5604f.mesh::uid://d4idbd24i2bek::::res://Modelos/ciudad/Models/OBJ format/Textures/colormap.png
 tile-slant.obj::Mesh::19645820079049412::1781268002::1781268340::1::::<><><>0<>0<>b11021f91863e442d3c6b600558dd5aa<>res://.godot/imported/tile-slant.obj-2901a2ea5f414d5ed6044f16628e7767.mesh<*>res://.godot/imported/tile-slant.obj-2901a2ea5f414d5ed6044f16628e7767.mesh::uid://d4idbd24i2bek::::res://Modelos/ciudad/Models/OBJ format/Textures/colormap.png
 tile-slantHigh.obj::Mesh::8383092746729078056::1781268002::1781268340::1::::<><><>0<>0<>d3d815566ce5f887ffecc5678ebb8310<>res://.godot/imported/tile-slantHigh.obj-963a286cea805849442716e139ef40fd.mesh<*>res://.godot/imported/tile-slantHigh.obj-963a286cea805849442716e139ef40fd.mesh::uid://d4idbd24i2bek::::res://Modelos/ciudad/Models/OBJ format/Textures/colormap.png
-::res://Modelos/ciudad/Models/OBJ format/Textures/::1781268356
+::res://Modelos/ciudad/Models/OBJ format/Textures/::1791552146
 colormap.png::CompressedTexture2D::9211437675996074958::1781268002::1781268356::1::::<><><>0<>0<>118355608310f08a8048a96996c359ce<>res://.godot/imported/colormap.png-f94d7cbb82a7e0751abd19dd1963330b.s3tc.ctex::
-::res://Modelos/ciudad/Models/Textures/::1781268336
+::res://Modelos/ciudad/Models/Textures/::1791552146
 variation-a.png::CompressedTexture2D::5633664146169977406::1781268002::1781268336::1::::<><><>0<>0<>ec993a4ac66a24013c52d20e0b814f2b<>res://.godot/imported/variation-a.png-f1adfba8be4ae261e1f2e0f64b217b5c.ctex::
-::res://Modelos/ciudad/Previews/::1781268337
+::res://Modelos/ciudad/Previews/::1791552147
 bridge-pillar-wide.png::CompressedTexture2D::6492924379291634873::1781268002::1781268336::1::::<><><>0<>0<>21f9e284fdbf0a535ad0563926421af4<>res://.godot/imported/bridge-pillar-wide.png-895f64b121297c6cff2d51e588f300ba.ctex::
 bridge-pillar.png::CompressedTexture2D::5834874215167017112::1781268002::1781268336::1::::<><><>0<>0<>7ebcd8f296d450c0cdcd01a27151e12e<>res://.godot/imported/bridge-pillar.png-9430d58429fe125c4b1d1ed5d5e85ea4.ctex::
 construction-barrier.png::CompressedTexture2D::7974367344939429620::1781268002::1781268336::1::::<><><>0<>0<>30350604f8d1b592059fb06586f8044f<>res://.godot/imported/construction-barrier.png-958d21f8dbe3fa9bff2229121d2d4aa7.ctex::
@@ -330,7 +331,7 @@ tile-high.png::CompressedTexture2D::3331624401093009880::1781268002::1781268337:
 tile-low.png::CompressedTexture2D::3906330138141765504::1781268002::1781268337::1::::<><><>0<>0<>6c25bdf07061f9795ce63100ea2d2f2d<>res://.godot/imported/tile-low.png-93ced54f57dfd65f6592860c7efbdc25.ctex::
 tile-slant.png::CompressedTexture2D::3751001717537504112::1781268002::1781268337::1::::<><><>0<>0<>d9d0b412efc6a5cb56c1dc45e597fb5f<>res://.godot/imported/tile-slant.png-4a93ba236e6c3cb79d1e56dff803556f.ctex::
 tile-slantHigh.png::CompressedTexture2D::3124077839947266759::1781268002::1781268337::1::::<><><>0<>0<>1216cf66014a798b3966f195ec2063c0<>res://.godot/imported/tile-slantHigh.png-d82ce07723ee86f94c91107f2fb6f99b.ctex::
-::res://scenes/::1791550752
+::res://scenes/::1791552147
 control.gd::GDScript::6654208498278021808::1785936266::0::1::::<>Control<><>0<>0<><>::
 control.tscn::PackedScene::8528569243747434249::1785936962::0::1::::<><><>0<>0<><>::uid://c12l3vddylqds::::res://scenes/control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://djmy31cdlxexq::::res://fonts/Designer.otf<>uid://bwd3t6b11ix3y::::res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
 Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png::CompressedTexture2D::3938504013858713484::1781268023::1781268338::1::::<><><>0<>0<>319499670d64091d4a34c096982114be<>res://.godot/imported/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png-7ea6c9c3e2793481ca18030632ce5aad.ctex::
@@ -342,7 +343,7 @@ puntuaciones.tscn::PackedScene::586996037105734810::1791550752::0::1::::<><><>0<
 scripts.gd::GDScript::8215544891270171799::1791380191::0::1::::<>Control<><>0<>0<><>::
 working_circuit_example.tscn::PackedScene::3539784809125090437::1781268023::0::1::::<><><>0<>0<><>::uid://docltc1jwxlf2::::res://prueba_auto_AVANZADO_1.tscn<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr<>uid://b2ovrodo85qx7::::res://Modelos/ciudad/Models/OBJ format/construction-barrier.obj<>uid://eipbjvjfwmp5::::res://Modelos/ciudad/Models/OBJ format/road-curve.obj<>uid://dwqynxoxg5jwo::::res://Modelos/ciudad/Models/OBJ format/road-straight.obj
 working_road_example.tscn::PackedScene::7908440601930268685::1781873082::0::1::::<><><>0<>0<><>::uid://docltc1jwxlf2::::res://prueba_auto_AVANZADO_1.tscn<>uid://b1oa3l5tgohqe::::res://Modelos/ciudad/Models/OBJ format/road-driveway-single.obj<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr
-::res://scripts/::1781268023
+::res://scripts/::1791552147
 camera_springarm_avanzado1.gd::GDScript::4485286633524042925::1781268002::0::1::::<>SpringArm3D<><>0<>0<><>::
 control_auto_prueba1.gd::GDScript::1197587218301049383::1781268002::0::1::::<>VehicleBody3D<><>0<>0<><>::
 prueba_auto_avanzado_controles.gd::GDScript::8577426847858057097::1781268002::0::1::::<>VehicleBody3D<><>0<>0<><>::
