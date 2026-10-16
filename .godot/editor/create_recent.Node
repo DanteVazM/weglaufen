@@ -1,8 +1,9 @@
-Label
+Sprite2D
+CollisionShape3D
 VehicleBody3D
+Label
 Control
 MeshInstance3D
-CollisionShape3D
 CharacterBody3D
 RigidBody3D
 StaticBody3D

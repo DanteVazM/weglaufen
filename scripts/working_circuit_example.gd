@@ -1,11 +1,13 @@
 extends Node3D
 
-@export var car: VehicleBody3D
+@onready var car = get_tree().get_first_node_in_group("player")
 
 @onready var tiempo_label = $TimerLabel
 @onready var puntaje_label = $PuntajeLabel
 @onready var timer = $Timer
 @onready var total_time_seconds: int = 0
+@onready var hp_bar = $VidaLabel
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,7 +15,7 @@ func _ready() -> void:
 	car.hp_changed.connect(_on_car_hp_changed)
 
 func _on_car_hp_changed(new_hp: int) -> void:
-	$HPLabel.text = str(new_hp)
+	hp_bar.text = str(new_hp)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _on_timer_timeout():
