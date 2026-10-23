@@ -49,6 +49,8 @@ func _on_volumen_pressed() -> void:
 		
 func _on_resolucion_pressed() -> void:
 	
+	var indice := RESOLUCIONES.find(get_window().size)
+	
 	var nueva_res: Vector2i = RESOLUCIONES[indice]
 	var ventana := get_window()
 

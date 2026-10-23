@@ -71,30 +71,18 @@ anchors_preset = -1
 anchor_top = 0.042000003
 anchor_bottom = 0.042000003
 offset_left = 268.0
-offset_top = 488.658
+offset_top = -4.342003
 offset_right = 841.0
-offset_bottom = 519.658
+offset_bottom = 585.658
 
-[node name="atras" type="Button" parent="ColorRect/VBoxContainer" unique_id=139829724]
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer" unique_id=47530036]
 layout_mode = 2
-text = "atras"
-
-[node name="Label" type="Label" parent="ColorRect/VBoxContainer/atras" unique_id=47530036]
-layout_mode = 0
-offset_left = 140.0
-offset_top = -488.0
-offset_right = 407.0
-offset_bottom = -441.0
 theme_override_font_sizes/font_size = 34
 text = "RECORDS"
 horizontal_alignment = 1
 
-[node name="label_tabla" type="Label" parent="ColorRect/VBoxContainer/atras" unique_id=850090617]
-layout_mode = 0
-offset_left = 5.0
-offset_top = -429.0
-offset_right = 561.0
-offset_bottom = -17.0
+[node name="label_tabla" type="Label" parent="ColorRect/VBoxContainer" unique_id=850090617]
+layout_mode = 2
 text = "mango:00492
 agus:48895
 joaco:34976
@@ -111,6 +99,13 @@ paco:54612
 gaston:41235
 messi:99999
 gustavo:04853"
+
+[node name="BtnPrueba" type="Button" parent="ColorRect/VBoxContainer" unique_id=50491282]
+layout_mode = 2
+
+[node name="atras" type="Button" parent="ColorRect/VBoxContainer" unique_id=139829724]
+layout_mode = 2
+text = "atras"
 
 [node name="Negro" type="Sprite2D" parent="." unique_id=1181472324]
 position = Vector2(582, 325)

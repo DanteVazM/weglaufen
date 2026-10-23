@@ -1,14 +1,18 @@
 extends Control
 
-
 const ARCHIVO = "user://highscores.json"
-const MAX_PUNTAJES = 10
+const MAX_PUNTAJES = 16
 
 var puntajes: Array = []
 
+@onready var label_tabla = $ColorRect/VBoxContainer/label_tabla
+@onready var btn_prueba = $ColorRect/VBoxContainer/BtnPrueba
 
-#func _ready():
-	#cargar_puntajes()
+
+func _ready():
+	cargar_puntajes()
+	btn_prueba.pressed.connect(_on_btn_prueba_pressed)
+	actualizar_tabla()
 
 
 func cargar_puntajes():
@@ -21,7 +25,6 @@ func cargar_puntajes():
 	archivo.close()
 
 	var datos = JSON.parse_string(texto)
-
 	if datos is Array:
 		puntajes = datos
 
@@ -31,31 +34,9 @@ func guardar_puntajes():
 	archivo.store_string(JSON.stringify(puntajes))
 	archivo.close()
 
-#mini prueba
-
-
-func _ready():
-	cargar_puntajes()
-
-	agregar_puntaje("Juan", 100)
-	agregar_puntaje("Pedro", 500)
-	agregar_puntaje("Ana", 250)
-
-	print(puntajes)
-	[
-	{"nombre": "Pedro", "puntos": 500},
-	{"nombre": "Ana", "puntos": 250},
-	{"nombre": "Juan", "puntos": 100}
-]
-#mini prueba
 
 func agregar_puntaje(nombre: String, puntos: int):
-	puntajes.append({
-		"nombre": nombre,
-		"puntos": puntos
-	})
-	
-	
+	puntajes.append({"nombre": nombre, "puntos": puntos})
 
 	puntajes.sort_custom(func(a, b):
 		return a["puntos"] > b["puntos"]
@@ -66,15 +47,20 @@ func agregar_puntaje(nombre: String, puntos: int):
 
 	guardar_puntajes()
 
-@onready var slider_vol = $ColorRect/VBoxContainer/HSlider
-@onready var res_option_btn = $ColorRect/VBoxContainer/OptionButton
 
-var presion_vol = false
+func actualizar_tabla():
+	var texto = ""
+	for p in puntajes:
+		texto += "%s:%05d\n" % [p["nombre"], p["puntos"]]
+	label_tabla.text = texto
 
-var presion_res = false
+
+# --- MINI PRUEBA: un click agrega un puntaje aleatorio ---
+func _on_btn_prueba_pressed():
+	var nombres = ["mango", "agus", "joaco", "rodrigo", "pela", "lucas", "manu", "milena"]
+	agregar_puntaje(nombres.pick_random(), randi_range(0, 99999))
+	actualizar_tabla()
 
 
-
-# Called when the node enters the scene tree for the first time.
 func _on_atras_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/control.tscn")
