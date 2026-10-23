@@ -1,51 +1,46 @@
-extends CharacterBody3D
+extends VehicleBody3D
 
-const SPEED = 5.0
-const ACCEL = 30.0
-const ATTACK_RANGE = 1.2
-const ATTACK_COOLDOWN = 1.0
-const TURN_SPEED = 8.0
+@export var torque: float = 1500.0
+@export var max_steer: float = 0.4
+@export var steer_speed: float = 3.0
+@export var attack_range: float = 3.0
+@export var attack_cooldown: float = 1.0
 
-@onready var target: Node3D = $"../Nissan GTR"
-
+var target: Node3D
 var attack_timer := 0.0
 
+func _ready() -> void:
+	target = get_tree().get_first_node_in_group("player")
+	# o: target = $"../Nissan GTR"
+
 func _physics_process(delta: float) -> void:
-	# Gravedad
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+	if target == null:
+		return
 
 	attack_timer = max(attack_timer - delta, 0.0)
 
-	# Vector horizontal hacia el jugador
 	var to_target := target.global_position - global_position
 	to_target.y = 0.0
 	var distance := to_target.length()
 
-	var desired := Vector3.ZERO
+	# Dirección al objetivo en el espacio local del vehículo (adelante = -Z)
+	var local_dir := global_transform.basis.inverse() * to_target
+	var angle := atan2(-local_dir.x, -local_dir.z)
 
-	if distance > ATTACK_RANGE:
-		# Perseguir
-		desired = to_target.normalized() * SPEED
+	var steer_target := clampf(angle, -max_steer, max_steer)
+	steering = lerp(steering, steer_target, steer_speed * delta)
+
+	if distance > attack_range:
+		engine_force = torque
+		brake = 0.0
 	else:
-		# En rango: atacar con cooldown
+		engine_force = 0.0
+		brake = 5.0
 		if attack_timer <= 0.0:
 			_attack()
-			attack_timer = ATTACK_COOLDOWN
-
-	# Girar solo sobre Y, suavemente, y solo si está lo bastante lejos
-	# para que la dirección sea estable (evita el temblor/giro a corta distancia)
-	if distance > 0.3:
-		var target_angle := atan2(-to_target.x, -to_target.z)
-		rotation.y = lerp_angle(rotation.y, target_angle, TURN_SPEED * delta)
-
-	# Aceleración horizontal (sin tocar Y para no pisar la gravedad)
-	var horizontal := Vector3(velocity.x, 0.0, velocity.z)
-	horizontal = horizontal.move_toward(desired, ACCEL * delta)
-	velocity.x = horizontal.x
-	velocity.z = horizontal.z
-
-	move_and_slide()
+			attack_timer = attack_cooldown
 
 func _attack() -> void:
 	print("¡El enemigo te atacó!")
+	if target.has_method("take_damage"):
+		target.take_damage(10)

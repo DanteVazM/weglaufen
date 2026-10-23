@@ -1,2 +1,6 @@
-res://scripts/enemy.gd
 res://scenes/mundos/ciudad_demo.tscn
+res://scenes/enemigos/pruebas/policia_basico3.tscn
+res://scripts/policia_vehiclebody3d.gd
+res://scenes/enemigos/pruebas/policia_basico4.tscn
+res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn
+res://scripts/enemy.gd
