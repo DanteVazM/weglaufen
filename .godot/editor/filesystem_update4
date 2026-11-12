@@ -1,3 +1,4 @@
-res://scenes/enemigos/pruebas/policia_basico4.tscn
-res://scripts/policia_vehiclebody3d.gd
-res://scenes/mundos/ciudad_demo.tscn
+res://scenes/2d/control.tscn
+res://musica.tscn
+res://scenes/2d/options.tscn
+res://scenes/scripts.gd

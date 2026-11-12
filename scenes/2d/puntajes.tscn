@@ -1,0 +1,160 @@
+[gd_scene format=3]
+
+[sub_resource type="GDScript" id="GDScript_pnt01"]
+script/source = "extends Control
+## Lista de puntajes de todos los jugadores (leída de global / puntajes.json).
+## Los nodos fijos están en puntajes.tscn; las filas se crean por código.
+
+@export_file(\"*.tscn\") var back_scene: String = \"\"   # a dónde vuelve el botón \"Volver\"
+@export var font_size: int = 26
+@export var max_rows: int = 100
+
+@onready var lista: VBoxContainer = %ListaVBox
+@onready var vacio_label: Label = %VacioLabel
+@onready var btn_volver: Button = %BotonVolver
+@onready var btn_borrar: Button = %BotonBorrar
+
+var _confirm_clear := false
+
+func _ready() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	btn_volver.pressed.connect(_on_back)
+	btn_borrar.pressed.connect(_on_clear)
+	btn_volver.grab_focus()
+	_fill()
+
+func _fill() -> void:
+	for c in lista.get_children():
+		lista.remove_child(c)
+		c.queue_free()
+
+	var scores: Array = global.scores
+	vacio_label.visible = scores.is_empty()
+	if scores.is_empty():
+		return
+
+	lista.add_child(_make_row(\"#\", \"Nombre\", \"Puntaje\", \"Fecha\", Color(0.7, 0.7, 0.7)))
+	for i in mini(scores.size(), max_rows):
+		var e: Dictionary = scores[i]
+		var color := Color.WHITE
+		if int(e[\"id\"]) == global.last_id:
+			color = Color.GOLD   # tu última partida, resaltada
+		lista.add_child(_make_row(str(i + 1), str(e[\"nombre\"]), str(e[\"puntaje\"]), str(e[\"fecha\"]), color))
+
+func _make_row(rank: String, nombre: String, puntaje: String, fecha: String, color: Color) -> HBoxContainer:
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override(\"separation\", 20)
+	row.add_child(_cell(rank, 70, false, color))
+	row.add_child(_cell(nombre, 0, true, color))
+	row.add_child(_cell(puntaje, 130, false, color, HORIZONTAL_ALIGNMENT_RIGHT))
+	row.add_child(_cell(fecha, 260, false, color, HORIZONTAL_ALIGNMENT_RIGHT))
+	return row
+
+func _cell(text: String, min_w: float, expand: bool, color: Color, align := HORIZONTAL_ALIGNMENT_LEFT) -> Label:
+	var l := Label.new()
+	l.text = text
+	l.custom_minimum_size = Vector2(min_w, 0)
+	l.horizontal_alignment = align
+	l.clip_text = true
+	l.add_theme_color_override(\"font_color\", color)
+	l.add_theme_font_size_override(\"font_size\", font_size)
+	if expand:
+		l.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	return l
+
+func _on_back() -> void:
+	if back_scene == \"\":
+		push_error(\"Asigná 'Back Scene' en el Inspector del nodo raíz.\")
+		return
+	get_tree().change_scene_to_file(back_scene)
+
+# Dos toques para borrar, así no se borra por accidente
+func _on_clear() -> void:
+	if not _confirm_clear:
+		_confirm_clear = true
+		btn_borrar.text = \"¿Seguro? Tocá de nuevo\"
+		return
+	global.clear_scores()
+	_confirm_clear = false
+	btn_borrar.text = \"Borrar puntajes\"
+	_fill()
+"
+
+[node name="Puntajes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_pnt01")
+
+[node name="Fondo" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.05, 0.05, 0.08, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TituloLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "PUNTAJES"
+horizontal_alignment = 1
+
+[node name="VacioLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_font_sizes/font_size = 28
+text = "Todavía no hay puntajes"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ListaVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="BotonVolver" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Volver"
+
+[node name="BotonBorrar" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(320, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Borrar puntajes"

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cjgtt0j6scavw"]
+
+[ext_resource type="PackedScene" uid="uid://creuoclghoumd" path="res://Modelos/ciudad/Full/Untitled.blend.ciudad(manzana).glb" id="1_j8ucc"]
+[ext_resource type="Texture2D" uid="uid://m4sfrvxq6pu4" path="res://sprites/images (1).png" id="2_crmrq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bxbdc"]
+albedo_texture = ExtResource("2_crmrq")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_j8ucc"]
+
+[node name="Untitled_blend_ciudad(manzana)" unique_id=2124691426 instance=ExtResource("1_j8ucc")]
+
+[node name="Plane_003" parent="." index="32" unique_id=604344513]
+material_override = SubResource("StandardMaterial3D_bxbdc")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="34" unique_id=525574195]
+navigation_mesh = SubResource("NavigationMesh_j8ucc")

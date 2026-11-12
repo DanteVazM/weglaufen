@@ -1,0 +1,202 @@
+[gd_scene format=3 uid="uid://bpgi7pemc6r33"]
+
+[sub_resource type="GDScript" id="GDScript_fin01"]
+script/source = "extends Control
+## Pantalla de Game Over. Los nodos (labels, campo de nombre y botones)
+## están en la escena pantalla_final.tscn; este script solo los conecta.
+
+@export_file(\"*.tscn\") var game_scene: String = \"\"     # escena del juego (\"Jugar de nuevo\")
+@export_file(\"*.tscn\") var scores_scene: String = \"\"   # escena de puntajes (\"Ver puntajes\")
+@export_file(\"*.tscn\") var menu_scene: String = \"\"     # opcional: escena del menú principal
+
+const SHOT_PATH := \"res://screenshots/muerte.png\"
+
+@onready var captura: TextureRect = %Captura
+@onready var puntaje_label: Label = %PuntajeLabel
+@onready var record_label: Label = %RecordLabel
+@onready var name_input: LineEdit = %NombreInput
+@onready var btn_jugar: Button = %BotonJugar
+@onready var btn_puntajes: Button = %BotonPuntajes
+@onready var btn_menu: Button = %BotonMenu
+@onready var btn_salir: Button = %BotonSalir
+
+func _ready() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+	# Captura del choque como fondo, si existe
+	if FileAccess.file_exists(SHOT_PATH):
+		var img := Image.load_from_file(SHOT_PATH)
+		if img != null:
+			captura.texture = ImageTexture.create_from_image(img)
+
+	# Puntaje y récord
+	puntaje_label.text = \"Puntaje: %d\" % global.final_score
+	if not global.score_saved and global.final_score > global.best_score:
+		record_label.text = \"¡Nuevo récord!\"
+	elif global.best_score > 0:
+		record_label.text = \"Récord: %s — %d\" % [global.best_name, global.best_score]
+	else:
+		record_label.text = \"\"
+
+	# Nombre y botones
+	name_input.text = global.player_name
+	name_input.editable = not global.score_saved   # si ya se guardó, no se cambia
+	name_input.text_submitted.connect(_on_play)       # Enter = jugar de nuevo
+	btn_jugar.pressed.connect(_on_play)
+	btn_puntajes.pressed.connect(_on_scores)
+	btn_menu.pressed.connect(_on_menu)
+	btn_salir.pressed.connect(_on_quit)
+	btn_puntajes.visible = scores_scene != \"\"
+	btn_menu.visible = menu_scene != \"\"
+	name_input.grab_focus()
+
+# Guarda el nombre y agrega el puntaje a la lista (una sola vez por partida)
+func _commit() -> void:
+	var n := name_input.text.strip_edges()
+	if n.is_empty():
+		n = \"Jugador\"
+	global.player_name = n
+	global.save()
+	if not global.score_saved:
+		global.add_score(n, global.final_score)
+
+func _on_play(_text: String = \"\") -> void:
+	if game_scene == \"\":
+		push_error(\"Asigná 'Game Scene' en el Inspector del nodo raíz.\")
+		return
+	_commit()
+	get_tree().change_scene_to_file(game_scene)
+
+func _on_scores() -> void:
+	_commit()
+	get_tree().change_scene_to_file(scores_scene)
+
+func _on_menu() -> void:
+	_commit()
+	get_tree().change_scene_to_file(menu_scene)
+
+func _on_quit() -> void:
+	_commit()
+	get_tree().quit()
+"
+
+[node name="PantallaFinal" type="Control" unique_id=1322184759]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_fin01")
+game_scene = "uid://5a8togoo6pgm"
+scores_scene = "res://scenes/2d/puntajes.tscn"
+menu_scene = "uid://gu3rik8swym2"
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=1985841510]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Captura" type="TextureRect" parent="." unique_id=892728452]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sombra" type="ColorRect" parent="." unique_id=2048352579]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=727172262]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2123711593]
+custom_minimum_size = Vector2(440, 0)
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="TituloLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=971669331]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.15, 0.15, 1)
+theme_override_font_sizes/font_size = 72
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="PuntajeLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=2144722437]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Puntaje: 0"
+horizontal_alignment = 1
+
+[node name="RecordLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=790057042]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.84, 0, 1)
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+
+[node name="NombreLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=641471574]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "¿Cómo te llamás?"
+horizontal_alignment = 1
+
+[node name="NombreInput" type="LineEdit" parent="CenterContainer/VBoxContainer" unique_id=1538088947]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+placeholder_text = "Tu nombre"
+alignment = 1
+max_length = 16
+
+[node name="BotonJugar" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1056452305]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Jugar de nuevo"
+
+[node name="BotonPuntajes" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1389316929]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Ver puntajes"
+
+[node name="BotonMenu" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1652609]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Menú principal"
+
+[node name="BotonSalir" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1476453225]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Salir"

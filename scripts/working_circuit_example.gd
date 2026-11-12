@@ -11,6 +11,7 @@ extends Node3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	global.new_run()
 	$Timer.start()
 	car.hp_changed.connect(_on_car_hp_changed)
 
@@ -24,4 +25,6 @@ func _on_timer_timeout():
 	var s = total_time_seconds - m * 60
 	$TimerLabel.text = '%02d:%02d' % [m, s]
 	puntaje_label.text = str(s)
+	global.final_score = total_time_seconds
+	
 	#str(int(torque)-300).replace("-", "")

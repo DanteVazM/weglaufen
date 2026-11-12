@@ -43,7 +43,7 @@ func die() -> void:
 	dead = true
 	print("Car destroyed!")
 	died.emit()
-	get_tree().change_scene_to_file("res://scenes/2d/game_over.tscn")
+	get_tree().change_scene_to_file("res://scenes/2d/pantalla_final.tscn")
 	
 func _physics_process(delta: float) -> void:
 	var dirrection = Input.get_action_strength("Acelerador") - Input.get_action_strength("Freno")
