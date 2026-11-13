@@ -13,7 +13,9 @@ config_version=5
 config/name="juego de carriles"
 run/main_scene="uid://gu3rik8swym2"
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/image="uid://da70e5twyyq0m"
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=1000
 
 [autoload]
 

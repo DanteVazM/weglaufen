@@ -1,23 +1,29 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1794501834
+::res://::1794574426
 export_presets.cfg::TextFile::-1::1794166378::0::1::::<><><>0<>0<><>::
 GUIA.md::TextFile::-1::1794166378::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1980151826230133846::1794166292::1794166410::1::::<><><>0<>0<>cecaca39f4779def21d8a05ad0c74534<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-musica.tscn::PackedScene::8907862244501391914::1794501834::0::1::::<><><>0<>0<><>::uid://cqrgg5ybvpmxg::::res://audio/musica_menu.mp3.mp3
+musica.tscn::PackedScene::8907862244501391914::1794502276::0::1::::<><><>0<>0<><>::uid://cqrgg5ybvpmxg::::res://audio/musica_menu.mp3.mp3
 road-curve-intersection-barrier.glb::PackedScene::5470066388398599921::1794166292::1794166292::1::::<><><>0<>0<>77f85338db9422aa19ff5a9270640e24<>res://.godot/imported/road-curve-intersection-barrier.glb-3ab61860af3856c851044ee84560bfbd.scn::
 save.cfg::TextFile::-1::1794167814::0::1::::<><><>0<>0<><>::
 tutorial.txt::TextFile::-1::1794166378::0::1::::<><><>0<>0<><>::
-::res://audio/::1794401580
+::res://audio/::1794502005
 musica_menu.mp3.mp3::AudioStreamMP3::5931333916983677612::1794401580::1794502005::1::::<><><>0<>0<>dbee999ee7bdfb940d5f71839c13358e<>res://.godot/imported/musica_menu.mp3.mp3-9e9a9e08150bae0bfb2cafc497658ee0.mp3str::
-::res://fonts/::1794400598
+::res://fonts/::1794574428
 CFLCD-Regular.ttf::FontFile::5782756563995616113::1794166378::1794166408::1::::<><><>0<>0<>52f9f7659202e63502a3d559a2a705ec<>res://.godot/imported/CFLCD-Regular.ttf-36150ab9fcf5c17efc4d66583609c648.fontdata::
+Designer.otf::FontFile::7817242755774672118::1794574413::1794574428::1::::<><><>0<>0<>f461d9bec3520b30f5eb433ee29cb67c<>res://.godot/imported/Designer.otf-20eba5e9a89ee0e925785bdc44f9f7ef.fontdata::
 digital-7.ttf::FontFile::4509547942745070196::1794166378::1794166408::1::::<><><>0<>0<>e18d1dc26f79b304c9e7e8aa4d10c3d6<>res://.godot/imported/digital-7.ttf-d770e344cb9c0815638e9df2f7aa5b14.fontdata::
-::res://imagenes/::1794400598
+::res://imagenes/::1794575991
 auto 2.webp::CompressedTexture2D::2221740878322430548::1794166378::1794166410::1::::<><><>0<>0<>5c06c71faef81136b43e56f2903a6aac<>res://.godot/imported/auto 2.webp-e14e24f99e4d9ecdf155598dbbe24215.ctex::
 Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png::CompressedTexture2D::3938504013858713484::1794166378::1794166410::1::::<><><>0<>0<>333eaf027b0feb0e88da55285a1467c7<>res://.godot/imported/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png-f4cff75204fc729cff6d518da81da1b9.ctex::
+negro.jpg::CompressedTexture2D::6806811665114710684::1794574413::1794574428::1::::<><><>0<>0<>71b7a9fd2f9e67d6c2077e8e76a54d42<>res://.godot/imported/negro.jpg-c638a56ad77d494d7acdb0117e5c0001.ctex::
 NG5Vc.jpg::CompressedTexture2D::3025309807499661642::1794166378::1794166410::1::::<><><>0<>0<>a6be13739a91ebaf81dd5760e7e2b79b<>res://.godot/imported/NG5Vc.jpg-49248ef6b0173f1405972687ac2026ae.ctex::
-::res://imagenes/EXRs/::1794400599
+::res://imagenes/EXRs/::1794575196
 citrus_orchard_road_puresky_4k.exr::CompressedTexture2D::6506801516981880933::1794166378::1794166410::1::::<><><>0<>0<>0de02c571c31ecf3963a6dd3ba9b3c37<>res://.godot/imported/citrus_orchard_road_puresky_4k.exr-7c0ceb231950b08beab3d9ee1fee6f6c.bptc.ctex::
+ulmer_muenster_4k.exr::CompressedTexture2D::4344054151371390114::1794574977::1794575196::1::::<><><>0<>0<>2c78a064ca337535bb2b08dbed32e7be<>res://.godot/imported/ulmer_muenster_4k.exr-4365f0f1bb13e570cda508190946dc55.bptc.ctex::
+::res://imagenes/logo/::1794575993
+Proyecto nuevo.png::CompressedTexture2D::7226848813288399454::1794575790::1794575995::1::::<><><>0<>0<>6d5168f7c914fe2661aeb519438ce1ec<>res://.godot/imported/Proyecto nuevo.png-1aad3c8ed6264aa7879e6ce75b11ff47.ctex::
+Proyecto nuevo.svg::CompressedTexture2D::5004090101134765056::1794575798::1794575995::1::::<><><>0<>0<>329984dc79e135f5bf44342a767ddb2a<>res://.godot/imported/Proyecto nuevo.svg-aab178e9a0ba4a55e9b905eb2b96d819.ctex::
 ::res://Modelos/::1794400598
 ::res://Modelos/Auto/::1794400598
 Nissan GTR.glb::PackedScene::7008071739971783641::1794166292::1794166292::1::::<><><>0<>0<>0d4cb8263cb54145f87583bb171d8a1b<>res://.godot/imported/Nissan GTR.glb-604b67d292e3850e203c45f88bcb9a80.scn::
@@ -410,7 +416,7 @@ tile-high.png::CompressedTexture2D::3331624401093009880::1794166292::1794166292:
 tile-low.png::CompressedTexture2D::3906330138141765504::1794166292::1794166292::1::::<><><>0<>0<>6c25bdf07061f9795ce63100ea2d2f2d<>res://.godot/imported/tile-low.png-93ced54f57dfd65f6592860c7efbdc25.ctex::
 tile-slant.png::CompressedTexture2D::3751001717537504112::1794166292::1794166292::1::::<><><>0<>0<>d9d0b412efc6a5cb56c1dc45e597fb5f<>res://.godot/imported/tile-slant.png-4a93ba236e6c3cb79d1e56dff803556f.ctex::
 tile-slantHigh.png::CompressedTexture2D::3124077839947266759::1794166292::1794166292::1::::<><><>0<>0<>1216cf66014a798b3966f195ec2063c0<>res://.godot/imported/tile-slantHigh.png-d82ce07723ee86f94c91107f2fb6f99b.ctex::
-::res://scenes/::1794403076
+::res://scenes/::1794502622
 CameraRig.tscn::PackedScene::3365366156453571909::1794166378::0::1::::<><><>0<>0<><>::uid://b1b5kkpulo2gf::::res://scripts/camera_rig.gd<>uid://bbydejupyvbgm::::res://scripts/camera_debug.gd<>uid://c5jobg2pp83du::::res://scripts/camera_utils.gd
 control.gd::GDScript::6654208498278021808::1794174736::0::1::::<>Control<><>0<>0<><>::
 control.tscn::PackedScene::464151488362395267::1794166378::0::1::::<><><>0<>0<><>::uid://c12l3vddylqds::::res://scenes/control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://djmy31cdlxexq::::res://fonts/Designer.otf<>uid://bwd3t6b11ix3y::::res://scenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
@@ -429,16 +435,16 @@ police_car_7.png::CompressedTexture2D::1517141824982725411::1794166378::17941664
 police_car_8.jpg::CompressedTexture2D::4982402225757247883::1794166378::1794166410::1::::<><><>0<>0<>2e1735a8be2557fbb1c65409ae0e586e<>res://.godot/imported/police_car_8.jpg-0c631a3f87015a0fe51d5d8e6fe716b1.s3tc.ctex::
 puntuaciones.gd::GDScript::1181644836223011518::1794166378::0::1::::<>Control<><>0<>0<><>::
 puntuaciones.tscn::PackedScene::586996037105734810::1794166378::0::1::::<><><>0<>0<><>::uid://q3nruuc8kp0q::::res://scenes/puntuaciones.gd<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
-scripts.gd::GDScript::8215544891270171799::1794403076::0::1::::<>Control<><>0<>0<><>::
+scripts.gd::GDScript::8215544891270171799::1794502622::0::1::::<>Control<><>0<>0<><>::
 untitled_blend_ciudad(manzana).tscn::PackedScene::5418116108019232944::1794166764::0::1::::<><><>0<>0<><>::uid://creuoclghoumd::::res://Modelos/ciudad/Full/Untitled.blend.ciudad(manzana).glb<>uid://m4sfrvxq6pu4::::res://sprites/images (1).png
-::res://scenes/2d/::1794501912
+::res://scenes/2d/::1794574413
 control.gd::GDScript::6654208498278021808::1794166378::0::1::::<>Control<><>0<>0<><>::
-control.tscn::PackedScene::8528569243747434249::1794501912::0::1::::<><><>0<>0<><>::uid://c12l3vddylqds::::res://scenes/control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://bwd3t6b11ix3y::::res://imagenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png<>uid://cqrgg5ybvpmxg::::res://audio/musica_menu.mp3.mp3
+control.tscn::PackedScene::8528569243747434249::1794502163::0::1::::<><><>0<>0<><>::uid://c12l3vddylqds::::res://scenes/control.gd<>uid://6wh0okin8vua::::res://imagenes/auto 2.webp<>uid://bwd3t6b11ix3y::::res://imagenes/Gemini_Generated_Image_wfwgy0wfwgy0wfwg.png
 game_over.tscn::PackedScene::4843216256742620446::1794166378::0::1::::<><><>0<>0<><>::
 hud.tscn::PackedScene::551021745022253524::1794166378::0::1::::<><><>0<>0<><>::
-options.tscn::PackedScene::4284024728091331973::1794501912::0::1::::<><><>0<>0<><>::uid://dpbw3aut2rln0::::res://scenes/scripts.gd<>uid://bjdqn7tk8dctu::::res://imagenes/NG5Vc.jpg<>uid://cqrgg5ybvpmxg::::res://audio/musica_menu.mp3.mp3
+options.tscn::PackedScene::4284024728091331973::1794502712::0::1::::<><><>0<>0<><>::uid://dpbw3aut2rln0::::res://scenes/scripts.gd<>uid://bjdqn7tk8dctu::::res://imagenes/NG5Vc.jpg<>uid://cqrgg5ybvpmxg::::res://audio/musica_menu.mp3.mp3
 pantalla_final.tscn::PackedScene::3452183280713640496::1794172374::0::1::::<><><>0<>0<><>::
-puntajes.tscn::PackedScene::-1::1794170118::0::1::::<><><>0<>0<><>::
+puntajes.tscn::PackedScene::7382415157377035548::1794574413::0::1::::<><><>0<>0<><>::
 puntuaciones.gd::GDScript::1181644836223011518::1794166378::0::1::::<>Control<><>0<>0<><>::
 puntuaciones.tscn::PackedScene::586996037105734810::1794166378::0::1::::<><><>0<>0<><>::uid://q3nruuc8kp0q::::res://scenes/puntuaciones.gd<>uid://c38jgt3x3rvt1::::res://imagenes/negro.jpg
 ::res://scenes/autos/::1794400598
@@ -451,22 +457,22 @@ prueba_auto_AVANZADO_1.tscn::PackedScene::8146736580175350441::1794166378::0::1:
 prueba_auto_AVANZADO_2.tscn::PackedScene::4134488458970984641::1794166378::0::1::::<><><>0<>0<><>::uid://dbfj2336jcpk::::res://scripts/control/control_avanzado_alfa1.gd<>uid://b45yar8adh2xl::::res://scripts/camera_springarm_avanzado1.gd
 prueba_auto_AVANZADO_3.tscn::PackedScene::54476418551678738::1794166490::0::1::::<><><>0<>0<><>::uid://dfwvvwo2c7itu::::res://scripts/control/prueba_auto_avanzado_3.gd<>uid://na0ajvfhtecj::::res://scenes/enemigos/pruebas/hurt_box.tscn
 ::res://scenes/enemigos/::1794400598
-::res://scenes/enemigos/pruebas/::1794400599
+::res://scenes/enemigos/pruebas/::1794574413
 hit_box.tscn::PackedScene::2606230291217378171::1794166378::0::1::::<><><>0<>0<><>::uid://5kmit5yqpprb::::res://scripts/hit_box.gd
 hurt_box.tscn::PackedScene::913973397501909573::1794166378::0::1::::<><><>0<>0<><>::uid://dbj54ftrkvigs::::res://scripts/hurt_box.gd
 policia2.tscn::PackedScene::5296809204670360133::1794166378::0::1::::<><><>0<>0<><>::uid://bu81xvaa0qm7s::::res://Modelos/Auto/police_car.glb
 policia_basico2.tscn::PackedScene::3404972210606014125::1794166378::0::1::::<><><>0<>0<><>::uid://2fc24buguq0r::::res://Modelos/Auto/police_car_0.png<>uid://uyhgugbxwvnl::::res://Modelos/Auto/police_car_1.png<>uid://dm4jfae500r2n::::res://Modelos/Auto/police_car_2.png<>uid://dliu2hfgf7m3l::::res://Modelos/Auto/police_car_3.png<>uid://b3wvbotmy613r::::res://Modelos/Auto/police_car_4.png<>uid://b37rf2j12xkkb::::res://Modelos/Auto/police_car_5.png<>uid://dbesrsrx0mumn::::res://Modelos/Auto/police_car_7.png<>uid://vewfuj27m31g::::res://Modelos/Auto/police_car_8.jpg
 policia_basico3.tscn::PackedScene::564470616011031297::1794166378::0::1::::<><><>0<>0<><>::uid://2fc24buguq0r::::res://Modelos/Auto/police_car_0.png<>uid://uyhgugbxwvnl::::res://Modelos/Auto/police_car_1.png<>uid://dm4jfae500r2n::::res://Modelos/Auto/police_car_2.png<>uid://dliu2hfgf7m3l::::res://Modelos/Auto/police_car_3.png<>uid://b3wvbotmy613r::::res://Modelos/Auto/police_car_4.png<>uid://b37rf2j12xkkb::::res://Modelos/Auto/police_car_5.png<>uid://dbesrsrx0mumn::::res://Modelos/Auto/police_car_7.png<>uid://vewfuj27m31g::::res://Modelos/Auto/police_car_8.jpg
-policia_basico4.tscn::PackedScene::3823981110982690393::1794166378::0::1::::<><><>0<>0<><>::uid://2fc24buguq0r::::res://Modelos/Auto/police_car_0.png<>uid://uyhgugbxwvnl::::res://Modelos/Auto/police_car_1.png<>uid://dm4jfae500r2n::::res://Modelos/Auto/police_car_2.png<>uid://dliu2hfgf7m3l::::res://Modelos/Auto/police_car_3.png<>uid://b3wvbotmy613r::::res://Modelos/Auto/police_car_4.png<>uid://b37rf2j12xkkb::::res://Modelos/Auto/police_car_5.png<>uid://dbesrsrx0mumn::::res://Modelos/Auto/police_car_7.png<>uid://vewfuj27m31g::::res://Modelos/Auto/police_car_8.jpg
+policia_basico4.tscn::PackedScene::3823981110982690393::1794574413::0::1::::<><><>0<>0<><>::uid://2fc24buguq0r::::res://Modelos/Auto/police_car_0.png<>uid://dterwnlbxoeml::::res://scripts/policia_basico_4.gd<>uid://uyhgugbxwvnl::::res://Modelos/Auto/police_car_1.png<>uid://dm4jfae500r2n::::res://Modelos/Auto/police_car_2.png<>uid://dliu2hfgf7m3l::::res://Modelos/Auto/police_car_3.png<>uid://b3wvbotmy613r::::res://Modelos/Auto/police_car_4.png<>uid://b37rf2j12xkkb::::res://Modelos/Auto/police_car_5.png<>uid://dbesrsrx0mumn::::res://Modelos/Auto/police_car_7.png<>uid://vewfuj27m31g::::res://Modelos/Auto/police_car_8.jpg
 policia_basico.tscn::PackedScene::4458554743570580209::1794166378::0::1::::<><><>0<>0<><>::uid://b33pf41vqagdh::::res://scripts/policia_basico.gd
-::res://scenes/mundos/::1794400599
-ciudad.tscn::PackedScene::2107703645238226988::1794168724::0::1::::<><><>0<>0<><>::uid://bci6ml1jqa1nt::::res://scripts/working_circuit_example.gd<>uid://dnpx45rci71y5::::res://sprites/5c1cd2237f4b43db7780df6fa7fe6770.jpg<>uid://difapy6wlgyvr::::res://sprites/Televisor.png<>uid://conhfkbd5pb1b::::res://fonts/CFLCD-Regular.ttf<>uid://b5ipuix5vmvdk::::res://fonts/digital-7.ttf<>res://scenes/untitled_blend_ciudad(manzana).tscn<>uid://1nho082jixm::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr<>uid://ibo0pman2sar::::res://scenes/enemigos/pruebas/policia_basico3.tscn<>uid://buqmn7g1ypi5f::::res://scenes/enemigos/pruebas/policia_basico4.tscn
+::res://scenes/mundos/::1794575200
+ciudad.tscn::PackedScene::2107703645238226988::1794575200::0::1::::<><><>0<>0<><>::uid://bci6ml1jqa1nt::::res://scripts/working_circuit_example.gd<>uid://dnpx45rci71y5::::res://sprites/5c1cd2237f4b43db7780df6fa7fe6770.jpg<>uid://difapy6wlgyvr::::res://sprites/Televisor.png<>uid://conhfkbd5pb1b::::res://fonts/CFLCD-Regular.ttf<>uid://b5ipuix5vmvdk::::res://fonts/digital-7.ttf<>uid://cjgtt0j6scavw::::res://scenes/untitled_blend_ciudad(manzana).tscn<>uid://b25j64nwsk37c::::res://imagenes/EXRs/ulmer_muenster_4k.exr<>uid://1nho082jixm::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn<>uid://ibo0pman2sar::::res://scenes/enemigos/pruebas/policia_basico3.tscn<>uid://buqmn7g1ypi5f::::res://scenes/enemigos/pruebas/policia_basico4.tscn
 ciudad_demo.tscn::PackedScene::2523802709037554077::1794166378::0::1::::<><><>0<>0<><>::uid://bci6ml1jqa1nt::::res://scripts/working_circuit_example.gd<>uid://difapy6wlgyvr::::res://sprites/Televisor.png<>uid://bvidigsujdo8::::res://Modelos/ciudad/Full/ciudad_demo_Image.png<>uid://conhfkbd5pb1b::::res://fonts/CFLCD-Regular.ttf<>uid://1nho082jixm::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn<>uid://dnpx45rci71y5::::res://sprites/5c1cd2237f4b43db7780df6fa7fe6770.jpg<>uid://b5ipuix5vmvdk::::res://fonts/digital-7.ttf<>uid://ddqwlp3juq6rj::::res://Modelos/ciudad/Full/ciudad_demo_colormap.png<>uid://qflgs6efm5p7::::res://Modelos/ciudad/Full/ciudad_demo_Image_35.jpg<>uid://h5x6tf51p1yc::::res://Modelos/ciudad/Full/ciudad_demo_Image_36.jpg<>uid://bvbm2odabshy5::::res://Modelos/ciudad/Full/ciudad_demo_Image_17.png<>uid://cilnhpfebm3pd::::res://Modelos/ciudad/Full/ciudad_demo_Image_33.jpg<>uid://b7w8dj7ujioe::::res://Modelos/ciudad/Full/ciudad_demo_Image_34.jpg<>uid://dn4vp26prrn4l::::res://Modelos/ciudad/Full/ciudad_demo_Image_37.png<>uid://c1lhsaqyxihqx::::res://Modelos/ciudad/Full/ciudad_demo_Image_38.jpg<>uid://0m0dno6xa6ys::::res://Modelos/ciudad/Full/ciudad_demo_Image_0.jpg<>uid://ckktye0k31vvy::::res://Modelos/ciudad/Full/ciudad_demo_Image_1.png<>uid://cg5qaoirfda5i::::res://Modelos/ciudad/Full/ciudad_demo_Image_2.jpg<>uid://388xgsh0v67r::::res://Modelos/ciudad/Full/ciudad_demo_Image_39.png<>uid://ba6ioi125xhdf::::res://Modelos/ciudad/Full/ciudad_demo_Image_40.jpg<>uid://def5n8din2qur::::res://Modelos/ciudad/Full/ciudad_demo_Image_41.png<>uid://md4avxhytmrk::::res://Modelos/ciudad/Full/ciudad_demo_Image_44.png<>uid://d0847gujj8563::::res://Modelos/ciudad/Full/ciudad_demo_Image_45.jpg<>uid://c3crj5y36blms::::res://Modelos/ciudad/Full/ciudad_demo_Image_46.jpg<>uid://b5lngwaqal8ea::::res://Modelos/ciudad/Full/ciudad_demo_Image_47.png<>uid://chhk2s8lxybcu::::res://Modelos/ciudad/Full/ciudad_demo_Image_48.jpg<>uid://dk5vvrgrj5udr::::res://Modelos/ciudad/Full/ciudad_demo_Image_49.jpg<>uid://dwjhcl23ftu0o::::res://Modelos/ciudad/Full/ciudad_demo_Image_50.jpg<>uid://cy7aj7kudculv::::res://Modelos/ciudad/Full/ciudad_demo_Image_51.jpg<>uid://ssnk50ni2dfo::::res://Modelos/ciudad/Full/ciudad_demo_Image_53.jpg<>uid://grftwb67btse::::res://Modelos/ciudad/Full/ciudad_demo_Image_54.png<>uid://c66x66n6qv7py::::res://Modelos/ciudad/Full/ciudad_demo_Image_55.jpg<>uid://bsrj2mgjsgvan::::res://Modelos/ciudad/Full/ciudad_demo_Image_56.jpg<>uid://cplug8pxueekk::::res://Modelos/ciudad/Full/ciudad_demo_Image_60.jpg<>uid://cbudmaur60hh1::::res://Modelos/ciudad/Full/ciudad_demo_Image_65.jpg<>uid://gv03s0gjc6x0::::res://Modelos/ciudad/Full/ciudad_demo_Image_66.png<>uid://dmykangegxj48::::res://Modelos/ciudad/Full/ciudad_demo_Image_10.jpg<>uid://c4y6acn0exy10::::res://Modelos/ciudad/Full/ciudad_demo_Image_11.png<>uid://c5gdelim2qdhi::::res://Modelos/ciudad/Full/ciudad_demo_Image_12.jpg<>uid://b54gog8klhnot::::res://Modelos/ciudad/Full/ciudad_demo_Image_61.jpg<>uid://dxk3bdfy2gbrk::::res://Modelos/ciudad/Full/ciudad_demo_Image_62.png<>uid://b58nge7rrtu7b::::res://Modelos/ciudad/Full/ciudad_demo_Image_63.jpg<>uid://ibo0pman2sar::::res://scenes/enemigos/pruebas/policia_basico3.tscn<>uid://buqmn7g1ypi5f::::res://scenes/enemigos/pruebas/policia_basico4.tscn<>uid://bib0i6v1lof35::::res://scripts/policia_vehiclebody3d.gd
 main.tscn::PackedScene::7707817494412191143::1794166378::0::1::::<><><>0<>0<><>::uid://by51okrujup50::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_2.tscn<>uid://rnv14k3qw5fd::::res://scenes/mundos/bobbing_platform.tscn
 working_circuit_example.tscn::PackedScene::3539784809125090437::1794166378::0::1::::<><><>0<>0<><>::uid://bci6ml1jqa1nt::::res://scripts/working_circuit_example.gd<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr<>uid://b2ovrodo85qx7::::res://Modelos/ciudad/Models/OBJ format/construction-barrier.obj<>uid://eipbjvjfwmp5::::res://Modelos/ciudad/Models/OBJ format/road-curve.obj<>uid://dwqynxoxg5jwo::::res://Modelos/ciudad/Models/OBJ format/road-straight.obj<>uid://1nho082jixm::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn
 working_road_example.tscn::PackedScene::7908440601930268685::1794166378::0::1::::<><><>0<>0<><>::uid://b1oa3l5tgohqe::::res://Modelos/ciudad/Models/OBJ format/road-driveway-single.obj<>uid://cyx7cnkhkewdh::::res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr<>uid://by51okrujup50::::res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_2.tscn
 ::res://screenshots/::1794381890
-::res://scripts/::1794400599
+::res://scripts/::1794574413
 camera_debug.gd::GDScript::2506344391903156836::1794166378::0::1::::<>Node2D<><>0<>0<><>::
 camera_follow.gd::GDScript::2711012465391820330::1794166378::0::1::::<>Camera3D<><>0<>0<><>::
 camera_rig.gd::GDScript::4215234913087603229::1794166378::0::1::::CameraRig<>Node3D<><>0<>0<><>::
@@ -483,10 +489,11 @@ hurt_hubert.gd::GDScript::5687126149846764802::1794166378::0::1::::<>Node3D<><>0
 pantalla_final.gd::GDScript::341183899726860988::1794168910::0::1::::<>Control<><>0<>0<><>::
 police_test.gd::GDScript::1537864704601254160::1794166378::0::1::::<>Area3D<><>0<>0<><>::
 policia_basico.gd::GDScript::4410432130850304293::1794166378::0::1::::<>CharacterBody3D<><>0<>0<><>::
+policia_basico_4.gd::GDScript::8502179767434222067::1794574413::0::1::::<>VehicleBody3D<><>0<>0<><>::
 policia_vehiclebody3d.gd::GDScript::2951529683583145610::1794166378::0::1::::<>VehicleBody3D<><>0<>0<><>::
 prueba_auto_avanzado_controles.gd::GDScript::8577426847858057097::1794166292::0::1::::<>VehicleBody3D<><>0<>0<><>::
 puntajes.gd::GDScript::5513636649670925927::1794168246::0::1::::<>Control<><>0<>0<><>::
-working_circuit_example.gd::GDScript::2545217667656360277::1794168408::0::1::::<>Node3D<><>0<>0<><>::
+working_circuit_example.gd::GDScript::2545217667656360277::1794574413::0::1::::<>Node3D<><>0<>0<><>::
 ::res://scripts/control/::1794400598
 control_auto_prueba1.gd::GDScript::1197587218301049383::1794166378::0::1::::<>VehicleBody3D<><>0<>0<><>::
 control_avanzado_alfa1.gd::GDScript::212952028476085704::1794166378::0::1::::<>VehicleBody3D<><>0<>0<><>::

@@ -6,8 +6,8 @@
 [ext_resource type="FontFile" uid="uid://conhfkbd5pb1b" path="res://fonts/CFLCD-Regular.ttf" id="4_x2c41"]
 [ext_resource type="FontFile" uid="uid://b5ipuix5vmvdk" path="res://fonts/digital-7.ttf" id="5_bhs1d"]
 [ext_resource type="PackedScene" uid="uid://cjgtt0j6scavw" path="res://scenes/untitled_blend_ciudad(manzana).tscn" id="9_lrlo3"]
+[ext_resource type="Texture2D" uid="uid://b25j64nwsk37c" path="res://imagenes/EXRs/ulmer_muenster_4k.exr" id="9_xsxyy"]
 [ext_resource type="PackedScene" uid="uid://1nho082jixm" path="res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn" id="10_mwqpn"]
-[ext_resource type="Texture2D" uid="uid://cyx7cnkhkewdh" path="res://imagenes/EXRs/citrus_orchard_road_puresky_4k.exr" id="10_xsxyy"]
 [ext_resource type="PackedScene" uid="uid://ibo0pman2sar" path="res://scenes/enemigos/pruebas/policia_basico3.tscn" id="43_bdqr8"]
 [ext_resource type="PackedScene" uid="uid://buqmn7g1ypi5f" path="res://scenes/enemigos/pruebas/policia_basico4.tscn" id="44_ux3n1"]
 
@@ -24,8 +24,7 @@ base_font = ExtResource("5_bhs1d")
 base_font = SubResource("FontVariation_tjxre")
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_mwqpn"]
-panorama = ExtResource("10_xsxyy")
-energy_multiplier = 0.3
+panorama = ExtResource("9_xsxyy")
 
 [sub_resource type="Sky" id="Sky_17t8l"]
 sky_material = SubResource("PanoramaSkyMaterial_mwqpn")
