@@ -1,4 +1,4 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://ddgdkfyfq8n3i"]
 
 [sub_resource type="GDScript" id="GDScript_pnt01"]
 script/source = "extends Control
@@ -80,7 +80,7 @@ func _on_clear() -> void:
 	_fill()
 "
 
-[node name="Puntajes" type="Control"]
+[node name="Puntajes" type="Control" unique_id=906723058]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -88,8 +88,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = SubResource("GDScript_pnt01")
+back_scene = "uid://dtrkj3s1jbrk0"
 
-[node name="Fondo" type="ColorRect" parent="."]
+[node name="Fondo" type="ColorRect" parent="." unique_id=25944461]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -99,7 +100,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0.05, 0.05, 0.08, 1)
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1221599259]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -111,17 +112,17 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 60
 theme_override_constants/margin_bottom = 40
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=512830131]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="TituloLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="TituloLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=950512415]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "PUNTAJES"
 horizontal_alignment = 1
 
-[node name="VacioLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="VacioLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1697744818]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
@@ -129,30 +130,30 @@ theme_override_font_sizes/font_size = 28
 text = "Todavía no hay puntajes"
 horizontal_alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer" unique_id=1923255789]
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
-[node name="ListaVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer"]
+[node name="ListaVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=664748587]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 8
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1255537311]
 layout_mode = 2
 theme_override_constants/separation = 16
 alignment = 1
 
-[node name="BotonVolver" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="BotonVolver" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=706984750]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(220, 52)
 layout_mode = 2
 theme_override_font_sizes/font_size = 28
 text = "Volver"
 
-[node name="BotonBorrar" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="BotonBorrar" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1272436731]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(320, 52)
 layout_mode = 2

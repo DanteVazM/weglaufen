@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://buqmn7g1ypi5f"]
 
 [ext_resource type="Texture2D" uid="uid://2fc24buguq0r" path="res://Modelos/Auto/police_car_0.png" id="1_161n0"]
+[ext_resource type="Script" uid="uid://dterwnlbxoeml" path="res://scripts/policia_basico_4.gd" id="1_lo1ha"]
 [ext_resource type="Texture2D" uid="uid://uyhgugbxwvnl" path="res://Modelos/Auto/police_car_1.png" id="2_lo1ha"]
 [ext_resource type="Texture2D" uid="uid://dm4jfae500r2n" path="res://Modelos/Auto/police_car_2.png" id="3_opcbm"]
 [ext_resource type="Texture2D" uid="uid://dliu2hfgf7m3l" path="res://Modelos/Auto/police_car_3.png" id="4_g14y4"]
@@ -514,6 +515,7 @@ can_sleep = false
 engine_force = 28.84
 brake = 3.76
 steering = 0.30403635
+script = ExtResource("1_lo1ha")
 
 [node name="Sketchfab_model" type="Node3D" parent="." unique_id=869339177]
 transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)
