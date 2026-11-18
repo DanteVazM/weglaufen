@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://5a8togoo6pgm"]
+
+[ext_resource type="Script" uid="uid://bci6ml1jqa1nt" path="res://scripts/working_circuit_example.gd" id="1_gkg0r"]
+[ext_resource type="Texture2D" uid="uid://dnpx45rci71y5" path="res://sprites/5c1cd2237f4b43db7780df6fa7fe6770.jpg" id="2_78a0d"]
+[ext_resource type="Texture2D" uid="uid://difapy6wlgyvr" path="res://sprites/Televisor.png" id="3_pk74v"]
+[ext_resource type="FontFile" uid="uid://conhfkbd5pb1b" path="res://fonts/CFLCD-Regular.ttf" id="4_x2c41"]
+[ext_resource type="FontFile" uid="uid://b5ipuix5vmvdk" path="res://fonts/digital-7.ttf" id="5_bhs1d"]
+[ext_resource type="PackedScene" uid="uid://pbolm7k1nc8b" path="res://scenes/mundos/Blend_ciudad(manzana).tscn" id="7_lrlo3"]
+[ext_resource type="Texture2D" uid="uid://b25j64nwsk37c" path="res://imagenes/EXRs/ulmer_muenster_4k.exr" id="9_xsxyy"]
+[ext_resource type="PackedScene" uid="uid://1nho082jixm" path="res://scenes/autos/auto_prueba/prueba_auto_AVANZADO_3.tscn" id="10_mwqpn"]
+[ext_resource type="PackedScene" uid="uid://buqmn7g1ypi5f" path="res://scenes/enemigos/pruebas/policia_basico4.tscn" id="44_ux3n1"]
+
+[sub_resource type="FontVariation" id="FontVariation_50k2h"]
+base_font = ExtResource("4_x2c41")
+
+[sub_resource type="FontVariation" id="FontVariation_mixj0"]
+base_font = ExtResource("5_bhs1d")
+
+[sub_resource type="FontVariation" id="FontVariation_tjxre"]
+base_font = ExtResource("5_bhs1d")
+
+[sub_resource type="FontVariation" id="FontVariation_4v565"]
+base_font = SubResource("FontVariation_tjxre")
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_mwqpn"]
+panorama = ExtResource("9_xsxyy")
+
+[sub_resource type="Sky" id="Sky_17t8l"]
+sky_material = SubResource("PanoramaSkyMaterial_mwqpn")
+radiance_size = 1
+
+[sub_resource type="Environment" id="Environment_tg0qf"]
+background_mode = 2
+sky = SubResource("Sky_17t8l")
+ambient_light_energy = 0.15
+reflected_light_source = 2
+
+[node name="el_mundo" type="Node3D" unique_id=1818928090]
+transform = Transform3D(0.9996517, -0.012425566, 0.023284584, 0.013013031, 0.9995965, -0.02525032, -0.022961438, 0.025544528, 0.99941, 0, 0, 0)
+script = ExtResource("1_gkg0r")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=962126440]
+transform = Transform3D(1, 0, 0, 0, -0.12301254, 0.9924051, 0, -0.9924051, -0.12301254, 0, 47.880245, 0)
+
+[node name="Timer" type="Timer" parent="." unique_id=450972647]
+process_callback = 0
+
+[node name="5c1Cd2237f4b43Db7780Df6Fa7Fe6770" type="Sprite2D" parent="." unique_id=1748613597]
+position = Vector2(113.5, 562.5)
+scale = Vector2(0.51792455, 0.15552017)
+texture = ExtResource("2_78a0d")
+
+[node name="Label" type="Label" parent="." unique_id=1710430780]
+offset_left = 176.0
+offset_top = 547.0
+offset_right = 216.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 30
+text = "-"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1476297555]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1036344587]
+position = Vector2(171, 562)
+texture = ExtResource("3_pk74v")
+
+[node name="TimerLabel" type="Label" parent="." unique_id=654964295]
+offset_left = 69.0
+offset_top = 47.0
+offset_right = 109.0
+offset_bottom = 70.0
+theme_override_fonts/font = SubResource("FontVariation_50k2h")
+theme_override_font_sizes/font_size = 16
+text = "23"
+
+[node name="Puntaje_Str" type="Label" parent="." unique_id=333188082]
+offset_left = 184.0
+offset_top = 533.0
+offset_right = 248.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_mixj0")
+text = "Puntaje"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Vida" type="Label" parent="." unique_id=1490851529]
+offset_left = 36.0
+offset_top = 463.0
+offset_right = 160.0
+offset_bottom = 537.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_mixj0")
+theme_override_font_sizes/font_size = 26
+text = "Vida"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PuntajeLabel" type="Label" parent="." unique_id=813397944]
+offset_left = 122.0
+offset_top = 531.0
+offset_right = 313.0
+offset_bottom = 652.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_4v565")
+theme_override_font_sizes/font_size = 58
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VidaLabel" type="Label" parent="." unique_id=915974005]
+offset_left = -4.0
+offset_top = 509.0
+offset_right = 187.0
+offset_bottom = 663.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_4v565")
+theme_override_font_sizes/font_size = 150
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Policia" parent="." unique_id=1371244709 groups=["obstaculo"] instance=ExtResource("44_ux3n1")]
+transform = Transform3D(-0.9993986, 0.013013066, 0.032155283, 0.0121901175, 0.9995971, -0.02565776, -0.03247618, -0.02525034, -0.99915427, -50.87163, 1.5250418, 175.5495)
+mass = 50.68
+
+[node name="Untitled_blend_ciudad(manzana)" parent="." unique_id=1013496904 instance=ExtResource("7_lrlo3")]
+transform = Transform3D(1, 2.4447218e-09, -1.1175871e-08, -5.180482e-09, 1, 0, 0, -1.1175871e-08, 1, -37.506123, 1.2342644, 128.17166)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=485599142]
+environment = SubResource("Environment_tg0qf")
+
+[node name="Nissan GTR" parent="." unique_id=1057592833 instance=ExtResource("10_mwqpn")]
+transform = Transform3D(-0.9997749, 0.013013063, 0.0167846, 0.012583202, 0.99959683, -0.025467265, -0.017109234, -0.025250316, -0.99953496, -49.585583, 2.1286626, 153.82895)
+collision_mask = 3
+max_RPM = 600
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

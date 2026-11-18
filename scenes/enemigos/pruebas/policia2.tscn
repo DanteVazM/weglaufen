@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://chp2w53ggtxqr"]
+
+[ext_resource type="PackedScene" uid="uid://bu81xvaa0qm7s" path="res://Modelos/Auto/police_car.glb" id="1_je4eq"]
+
+[node name="Sketchfab_Scene" unique_id=1471842762 instance=ExtResource("1_je4eq")]

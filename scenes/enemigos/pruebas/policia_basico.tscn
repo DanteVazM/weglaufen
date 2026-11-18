@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b4r00lqjetf0t"]
+
+[ext_resource type="Script" uid="uid://b33pf41vqagdh" path="res://scripts/policia_basico.gd" id="1_4xsew"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_d71r5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xsew"]
+metallic = 0.64
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wf3vl"]
+
+[node name="PoliciaBasico" type="CharacterBody3D" unique_id=446653926]
+script = ExtResource("1_4xsew")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1430653123]
+mesh = SubResource("CapsuleMesh_d71r5")
+surface_material_override/0 = SubResource("StandardMaterial3D_4xsew")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1307826340]
+shape = SubResource("CapsuleShape3D_wf3vl")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1893988904]

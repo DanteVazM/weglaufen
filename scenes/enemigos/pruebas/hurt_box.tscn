@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://na0ajvfhtecj"]
+
+[ext_resource type="Script" uid="uid://dbj54ftrkvigs" path="res://scripts/hurt_box.gd" id="1_vnflb"]
+
+[node name="HurtBox" type="Area3D" unique_id=1851784449]
+script = ExtResource("1_vnflb")
